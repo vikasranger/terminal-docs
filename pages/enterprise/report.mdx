@@ -1,0 +1,201 @@
+---
+title: report
+---
+
+### ensure
+
+- kind
+```js 
+ composite | mapper | plugin | query | spreadsheet
+```
+
+### remove
+
+
+### print
+
+
+### update
+
+#### composite
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- inputForm
+```js 
+ @null | null | Symbol
+```
+- outputForm
+```js 
+ @null | null | Symbol
+```
+- mergeReports
+```js 
+ @null | null | Report1, Report2,...
+```
+#### mapper
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- inputForm
+```js 
+ @null | null | Symbol
+```
+- outputForm
+```js 
+ @null | null | Symbol
+```
+- mappedReport
+```js 
+ @null | null | Symbol
+```
+- saveToSpreadsheet
+```js 
+ @null | null | Symbol
+```
+- inputFormMapping
+```js 
+ @null | @empty | @@mapping | mapping
+```
+- outputFormMapping
+```js 
+ @null | @empty | @@mapping | mapping
+```
+#### plugin
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- inputForm
+```js 
+ @null | null | Symbol
+```
+- outputForm
+```js 
+ @null | null | Symbol
+```
+- pluginName
+```js 
+ @null | @empty | pluginName
+```
+- pluginApi
+```js 
+ @null | null | Symbol
+```
+- inputFormMapping
+```js 
+ @null | @empty | @@mapping | mapping
+```
+- outputFormMapping
+```js 
+ @null | @empty | @@mapping | mapping
+```
+#### query
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- inputForm
+```js 
+ @null | null | Symbol
+```
+- outputForm
+```js 
+ @null | null | Symbol
+```
+- fromSpreadsheets
+```js 
+ @null | null | Spreadsheet1, Spreadsheet2,...
+```
+- neoQL
+```js 
+ @null | @empty | neoQL code
+```
+#### spreadsheet
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- inputForm
+```js 
+ @null | null | Symbol
+```
+- outputForm
+```js 
+ @null | null | Symbol
+```
+- fromSpreadsheet
+```js 
+ @null | null | Symbol
+```
+- filterCondition
+```js 
+ @null | @empty | @@condition | condition
+```
+- outputFormMapping
+```js 
+ @null | @empty | @@mapping | mapping
+```
+

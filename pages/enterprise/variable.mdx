@@ -1,0 +1,1421 @@
+---
+title: variable
+---
+
+### ensure
+
+- kind
+```js 
+ any | bool | buttonVariant | calendar | chipSetDay | chipSetTime | color | condition | currency | dataPartitionPeriod | dataPriority | date | dateTime | day | decimal | deviceSize | deviceType | direction | dividerKind | document | duration | email | fieldVariant | font | function | html | hyperlink | icon | image | imageCorner | language | location | mapOfText | mapPinShape | mapping | mobileNumber | month | number | paragraph | quarter | ratingKind | scheduler | sequence | setOfNumber | setOfText | stroke | symbol | text | themePlacement | time | timeZone | tree | userSetting
+```
+
+### remove
+
+
+### print
+
+
+### update
+
+#### any
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+#### bool
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | @null | true | false | yes | no
+```
+#### buttonVariant
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ contained | icon | outlined | text
+```
+#### calendar
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- nameDate
+```js 
+ @null | @empty | text
+```
+- date
+```js 
+ @null | null | dd/MM/yyyy | date
+```
+#### chipSetDay
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | null | friday | monday | saturday | sunday | thursday | tuesday | wednesday
+```
+#### chipSetTime
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | null | time,...
+```
+#### color
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ amber | black | blue | cyan | deepOrange | deepPurple | error | errorDark | errorLight | green | grey | indigo | info | infoDark | infoLight | lightBlue | lightGreen | lime | orange | pink | primary | primaryDark | primaryLight | purple | red | secondary | secondaryDark | secondaryLight | success | successDark | successLight | teal | textDisabled | textInverse | textPrimary | textSecondary | transparent | warning | warningDark | warningLight | white | yellow
+```
+#### condition
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- fromSourcePlugin
+```js 
+ @null | @empty | fromSourcePlugin
+```
+- inputForm
+```js 
+ @null | null | Symbol
+```
+- sourceForm
+```js 
+ @null | null | Symbol
+```
+- sourceGrid
+```js 
+ @null | null | Symbol
+```
+- condition
+```js 
+ And(statement1, Or(Statement2,Statement3, And(Statement6,Statement7)), Statement4)
+```
+#### currency
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | currencyCode
+```
+#### dataPartitionPeriod
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ daily | hourly | monthly | quarterly | weekly | yearly
+```
+#### dataPriority
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ high | low | medium
+```
+#### date
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
+```
+#### dateTime
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
+```
+#### day
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ friday | monday | saturday | sunday | thursday | tuesday | wednesday
+```
+#### decimal
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | decimal
+```
+#### deviceSize
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ desktop | laptop | mobile | tablet
+```
+#### deviceType
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ agent | android | ios | test | web
+```
+#### direction
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ horizontal | vertical
+```
+#### dividerKind
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ thick | thin
+```
+#### document
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+#### duration
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | duration
+```
+#### email
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | email
+```
+#### fieldVariant
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ filled | outlined | standard
+```
+#### font
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
+```
+#### function
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- outputKind
+```js 
+ number | numberArray | text | textArray
+```
+- javascript
+```js 
+ @null | @empty | javascript
+```
+- inputArgs
+```js 
+ A1:<ArgType>, A2?:<ArgType> ArgType: number | numberArray | text | textArray
+```
+#### html
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+#### hyperlink
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | text
+```
+- displayText
+```js 
+ @null | @empty | text
+```
+- color
+```js 
+ @null | @empty | @@color | color
+```
+- kind
+```js 
+ general | youtube
+```
+#### icon
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | icon
+```
+#### image
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+#### imageCorner
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ circle | rectangle | rounded
+```
+#### language
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | language
+```
+#### location
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+#### mapOfText
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- form
+```js 
+ @null | null | Symbol
+```
+#### mapPinShape
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ circle | circleBig | circleMedium | heart | heartBig | heartMedium | pin | square | squareBig | squareMedium | star | starBig | starMedium | triangle | triangleBig | triangleMedium
+```
+#### mapping
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- fromForm
+```js 
+ @null | null | Symbol
+```
+- fromGrid
+```js 
+ @null | null | Symbol
+```
+- fromPlugin
+```js 
+ @null | @empty | fromPlugin
+```
+- toForm
+```js 
+ @null | null | Symbol
+```
+- toGrid
+```js 
+ @null | null | Symbol
+```
+- toPlugin
+```js 
+ @null | @empty | toPlugin
+```
+#### mobileNumber
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | mobileNumber
+```
+#### month
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ April | August | December | February | January | July | June | March | May | November | October | September
+```
+#### number
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | null | long1, long2, ...
+```
+#### paragraph
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | text
+```
+- params
+```js 
+ @null | null | text1, text2,...
+```
+#### quarter
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ Quarter_1 | Quarter_2 | Quarter_3 | Quarter_4
+```
+#### ratingKind
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ heart | star | thumbs
+```
+#### scheduler
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- startDateTime
+```js 
+ @null | null | dd/MM/yyyy hh:mm:ss am/pm | startDateTime
+```
+- timeZone
+```js 
+ @null | @empty | Timezone
+```
+- repeatFrequencyKind
+```js 
+ days | hours | minutes | months | weeks | years
+```
+#### sequence
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | seqStart
+```
+#### setOfNumber
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | null | number1, number2,...
+```
+#### setOfText
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | null | text1, text2,...
+```
+- colors
+```js 
+ @null | null | amber | black | blue | cyan | deepOrange | deepPurple | error | errorDark | errorLight | green | grey | indigo | info | infoDark | infoLight | lightBlue | lightGreen | lime | orange | pink | primary | primaryDark | primaryLight | purple | red | secondary | secondaryDark | secondaryLight | success | successDark | successLight | teal | textDisabled | textInverse | textPrimary | textSecondary | transparent | warning | warningDark | warningLight | white | yellow
+```
+- shades
+```js 
+ @null | null | s100 | s200 | s50 | s500
+```
+#### stroke
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ dash | dotted | solid
+```
+#### symbol
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | null | Symbol
+```
+#### text
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | text
+```
+- params
+```js 
+ @null | null | text1, text2,...
+```
+#### themePlacement
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ bottom | center | diagonal | end | flexCenter | justify | overlayTop | spaceBetween | start | top
+```
+#### time
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | time
+```
+#### timeZone
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- value
+```js 
+ @null | @empty | timeZone
+```
+#### tree
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- paths
+```js 
+ @null | null | a1/b1/c1, a1/b1/c2, a1/b2/c3,...
+```
+#### userSetting
+- name
+```js 
+ Symbol
+```
+- label
+```js 
+ @null | @empty | label
+```
+- description
+```js 
+ @null | @empty | paragraph
+```
+- filterTags
+```js 
+ @null | null | text1, text2,...
+```
+- deploy
+```js 
+ fixedOnDeploy | requiredOnDeploy
+```
+- kind
+```js 
+ pickMany | pickOne | text
+```
+- dataSource
+```js 
+ @null | @empty | @@setOfText | setOfText
+```
+- excludeOnUserSettings
+```js 
+ @null | null | true | false | yes | no
+```
+- doNotShowValueToAdmin
+```js 
+ @null | null | true | false | yes | no
+```
+
