@@ -1,0 +1,267 @@
+---
+title: deeplink
+---
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`kind`**
+```js filename="type"
+ report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
+```
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## print
+
+This command doesn't require any additional arguments.
+
+
+## update
+
+This command accepts the following arguments:
+
+### report
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`visibilityConstraint`**
+```js filename="type"
+ allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+```
+**`creationRoles`**
+```js filename="type"
+ null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+```
+**`showHeader`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showEnterprise`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showSeparator`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`passImageInDeeplink`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`expiry`**
+```js filename="type"
+ noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+```
+**`hyperlinkVars`**
+```js filename="type"
+ null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+```
+**`report`**
+```js filename="type"
+ null | Symbol
+```
+**`outputFormContentLayout`**
+```js filename="type"
+ null | Symbol
+```
+### spreadsheetEditor
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`visibilityConstraint`**
+```js filename="type"
+ allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+```
+**`creationRoles`**
+```js filename="type"
+ null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+```
+**`showHeader`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showEnterprise`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showSeparator`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`passImageInDeeplink`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`expiry`**
+```js filename="type"
+ noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+```
+**`hyperlinkVars`**
+```js filename="type"
+ null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+```
+**`spreadsheet`**
+```js filename="type"
+ null | Symbol
+```
+**`spreadsheetLayout`**
+```js filename="type"
+ null | Symbol
+```
+### spreadsheetInsert
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`visibilityConstraint`**
+```js filename="type"
+ allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+```
+**`creationRoles`**
+```js filename="type"
+ null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+```
+**`showHeader`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showEnterprise`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showSeparator`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`passImageInDeeplink`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`expiry`**
+```js filename="type"
+ noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+```
+**`hyperlinkVars`**
+```js filename="type"
+ null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+```
+**`spreadsheet`**
+```js filename="type"
+ null | Symbol
+```
+**`successMessage`**
+```js filename="type"
+ @null | @empty | @@paragraph | paragraph
+```
+**`successMessageFontVar`**
+```js filename="type"
+ @null | @empty | @@font | font
+```
+**`successMessageBgColorVar`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`showRepeatButton`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`repeatButtonLabel`**
+```js filename="type"
+ null | @null | @empty | repeatButtonLabel
+```
+### spreadsheetRow
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`visibilityConstraint`**
+```js filename="type"
+ allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+```
+**`creationRoles`**
+```js filename="type"
+ null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+```
+**`showHeader`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showEnterprise`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showSeparator`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`passImageInDeeplink`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`expiry`**
+```js filename="type"
+ noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+```
+**`hyperlinkVars`**
+```js filename="type"
+ null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+```
+**`spreadsheet`**
+```js filename="type"
+ null | Symbol
+```
+**`formContentLayout`**
+```js filename="type"
+ null | Symbol
+```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
+

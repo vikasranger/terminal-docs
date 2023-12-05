@@ -1,0 +1,309 @@
+---
+title: gridLayout
+---
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`kind`**
+```js filename="type"
+ card | kanban | list | map | table | xyChart
+```
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## print
+
+This command doesn't require any additional arguments.
+
+
+## update
+
+This command accepts the following arguments:
+
+### card
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`toolTipField`**
+```js filename="type"
+ null | Symbol
+```
+**`bkgColorField`**
+```js filename="type"
+ null | Symbol
+```
+**`allowToSwitchLayouts`**
+```js filename="type"
+ null | @empty | GridLayoutSwitcher1, GridLayoutSwitcher2,...
+```
+**`groupByField`**
+```js filename="type"
+ null | Symbol
+```
+### kanban
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`toolTipField`**
+```js filename="type"
+ null | Symbol
+```
+**`bkgColorField`**
+```js filename="type"
+ null | Symbol
+```
+**`allowToSwitchLayouts`**
+```js filename="type"
+ null | @empty | GridLayoutSwitcher1, GridLayoutSwitcher2,...
+```
+**`showCommentCount`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showSectionName`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showFooter`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`fontSize`**
+```js filename="type"
+ body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
+```
+**`showFields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`sortByFields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`kanbanField`**
+```js filename="type"
+ null | Symbol
+```
+**`swimLaneLabels`**
+```js filename="type"
+ null | @null | @empty | label,...
+```
+**`swimLaneColors`**
+```js filename="type"
+ null | @empty | ColorVar1, ColorVar2,...
+```
+### list
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`toolTipField`**
+```js filename="type"
+ null | Symbol
+```
+**`bkgColorField`**
+```js filename="type"
+ null | Symbol
+```
+**`allowToSwitchLayouts`**
+```js filename="type"
+ null | @empty | GridLayoutSwitcher1, GridLayoutSwitcher2,...
+```
+**`groupByField`**
+```js filename="type"
+ null | Symbol
+```
+### map
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`toolTipField`**
+```js filename="type"
+ null | Symbol
+```
+**`bkgColorField`**
+```js filename="type"
+ null | Symbol
+```
+**`allowToSwitchLayouts`**
+```js filename="type"
+ null | @empty | GridLayoutSwitcher1, GridLayoutSwitcher2,...
+```
+**`locationField`**
+```js filename="type"
+ null | Symbol
+```
+**`toolTipFieldId`**
+```js filename="type"
+ null | Symbol
+```
+**`colorField`**
+```js filename="type"
+ null | Symbol
+```
+**`shapeField`**
+```js filename="type"
+ null | Symbol
+```
+**`groupByField`**
+```js filename="type"
+ null | Field | $CreatedBy,$CreatedOn,$RowId,$RowOrder,$UpdatedBy,$UpdatedOn...
+```
+**`strokeField`**
+```js filename="type"
+ null | Symbol
+```
+### table
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`toolTipField`**
+```js filename="type"
+ null | Symbol
+```
+**`bkgColorField`**
+```js filename="type"
+ null | Symbol
+```
+**`allowToSwitchLayouts`**
+```js filename="type"
+ null | @empty | GridLayoutSwitcher1, GridLayoutSwitcher2,...
+```
+**`groupByField`**
+```js filename="type"
+ null | Symbol
+```
+**`hideRowSeparator`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`pageSize`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`showFields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`columnSizes`**
+```js filename="type"
+ null | @null | @empty | AutoSize | Flex | [number]px | [number]em,...
+```
+**`sortByFields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`columnAlignments`**
+```js filename="type"
+ null | @empty | bottom | center | diagonal | end | flexCenter | justify | overlayTop | spaceBetween | start | top
+```
+**`style`**
+```js filename="type"
+ defaultStyle
+```
+### xyChart
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`toolTipField`**
+```js filename="type"
+ null | Symbol
+```
+**`bkgColorField`**
+```js filename="type"
+ null | Symbol
+```
+**`allowToSwitchLayouts`**
+```js filename="type"
+ null | @empty | GridLayoutSwitcher1, GridLayoutSwitcher2,...
+```
+**`xField`**
+```js filename="type"
+ null | Symbol
+```
+**`xFieldColor`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`chartType`**
+```js filename="type"
+ barGraph | doughnut | lineChart | pieChart | scatterPlot
+```
+**`yFields`**
+```js filename="type"
+ null | @empty | YField1, YField2,...
+```
+**`yFieldColors`**
+```js filename="type"
+ null | @empty | YFieldColor1, YFieldColor2,...
+```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
+
