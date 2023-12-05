@@ -2,200 +2,214 @@
 title: report
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
 
-- kind
-```js 
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`kind`**
+```js filename="type"
  composite | mapper | plugin | query | spreadsheet
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-#### composite
-- name
-```js 
+This command accepts the following arguments:
+
+### composite
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- inputForm
-```js 
+**`inputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- outputForm
-```js 
+**`outputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- mergeReports
-```js 
+**`mergeReports`**
+```js filename="type"
  @null | null | Report1, Report2,...
 ```
-#### mapper
-- name
-```js 
+### mapper
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- inputForm
-```js 
+**`inputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- outputForm
-```js 
+**`outputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- mappedReport
-```js 
+**`mappedReport`**
+```js filename="type"
  @null | null | Symbol
 ```
-- saveToSpreadsheet
-```js 
+**`saveToSpreadsheet`**
+```js filename="type"
  @null | null | Symbol
 ```
-- inputFormMapping
-```js 
+**`inputFormMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-- outputFormMapping
-```js 
+**`outputFormMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-#### plugin
-- name
-```js 
+### plugin
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- inputForm
-```js 
+**`inputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- outputForm
-```js 
+**`outputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- pluginName
-```js 
+**`pluginName`**
+```js filename="type"
  @null | @empty | pluginName
 ```
-- pluginApi
-```js 
+**`pluginApi`**
+```js filename="type"
  @null | null | Symbol
 ```
-- inputFormMapping
-```js 
+**`inputFormMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-- outputFormMapping
-```js 
+**`outputFormMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-#### query
-- name
-```js 
+### query
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- inputForm
-```js 
+**`inputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- outputForm
-```js 
+**`outputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- fromSpreadsheets
-```js 
+**`fromSpreadsheets`**
+```js filename="type"
  @null | null | Spreadsheet1, Spreadsheet2,...
 ```
-- neoQL
-```js 
+**`neoQL`**
+```js filename="type"
  @null | @empty | neoQL code
 ```
-#### spreadsheet
-- name
-```js 
+### spreadsheet
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- inputForm
-```js 
+**`inputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- outputForm
-```js 
+**`outputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- fromSpreadsheet
-```js 
+**`fromSpreadsheet`**
+```js filename="type"
  @null | null | Symbol
 ```
-- filterCondition
-```js 
+**`filterCondition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- outputFormMapping
-```js 
+**`outputFormMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
 

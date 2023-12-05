@@ -2,88 +2,100 @@
 title: formLayoutContent
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command doesn't require any additional arguments.
 
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-- name
-```js 
+This command accepts the following arguments:
+
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- displayLabel
-```js 
+**`displayLabel`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- direction
-```js 
+**`direction`**
+```js filename="type"
  horizontal | vertical
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | FormContentLayout1, FormContentLayout2,...
 ```
-- position
-```js 
+**`position`**
+```js filename="type"
  end | flexCenter | start
 ```
-- defaultLayout
-```js 
+**`defaultLayout`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showBorders
-```js 
+**`showBorders`**
+```js filename="type"
  @null | null | bottom | left | right | top
 ```
-- showPaddings
-```js 
+**`showPaddings`**
+```js filename="type"
  @null | null | bottom | left | right | top
 ```
-- contentPadding
-```js 
+**`contentPadding`**
+```js filename="type"
  thick | thin
 ```
-- renderingMode
-```js 
+**`renderingMode`**
+```js filename="type"
  a4Size | fullScreen
 ```
-- fields
-```js 
+**`fields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- contentLayouts
-```js 
+**`contentLayouts`**
+```js filename="type"
  @null | null | ContentLayout1, ContentLayout2,...
 ```
-- gridLayouts
-```js 
+**`gridLayouts`**
+```js filename="type"
  @null | @empty | null | Grid1/Layout1,Grid2/Layout2...
 ```
-- gridSwitchers
-```js 
+**`gridSwitchers`**
+```js filename="type"
  @null | null | Grid1, Grid2,...
 ```
-- showItemBorders
-```js 
+**`showItemBorders`**
+```js filename="type"
  @null | null | bottom | left | right | top
 ```
-- showItemPadding
-```js 
+**`showItemPadding`**
+```js filename="type"
  @null | null | bottom | left | right | top
 ```
-- padding
-```js 
+**`padding`**
+```js filename="type"
  thick | thin
 ```
 

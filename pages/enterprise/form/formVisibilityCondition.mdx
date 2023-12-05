@@ -2,31 +2,50 @@
 title: formVisibilityCondition
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-- name
-```js 
+This command accepts the following arguments:
+
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- lhs
-```js 
- @null | null | sectionField/grid/field
+**`lhs`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- rhs
-```js 
+**`rhs`**
+```js filename="type"
  @null | @empty | ArgBinderValue
 ```
-- visibilityOperator
-```js 
+**`visibilityOperator`**
+```js filename="type"
  equalTo | hasNoValue | hasValue | notEqualTo
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
 
+This command doesn't require any additional arguments.
+
+
+## goTo
+
+
+This command doesn't require any additional arguments.
 

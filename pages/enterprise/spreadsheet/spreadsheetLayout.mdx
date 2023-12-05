@@ -2,235 +2,254 @@
 title: spreadsheetLayout
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
 
-- kind
-```js 
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`kind`**
+```js filename="type"
  card | kanban | list | table
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-#### card
-- name
-```js 
+This command accepts the following arguments:
+
+### card
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | SpreadsheetLayout1, SpreadsheetLayout2,...
 ```
-- groupByField
-```js 
+**`groupByField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- kind
-```js 
+**`kind`**
+```js filename="type"
  tab | tree
 ```
-- showSearchBar
-```js 
+**`showSearchBar`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- categoryFields
-```js 
+**`categoryFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- advanceFilterFields
-```js 
+**`advanceFilterFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- sortByFields
-```js 
+**`sortByFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-#### kanban
-- name
-```js 
+### kanban
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | SpreadsheetLayout1, SpreadsheetLayout2,...
 ```
-- showCommentCount
-```js 
+**`showCommentCount`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showSectionName
-```js 
+**`showSectionName`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showFooter
-```js 
+**`showFooter`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- fontSize
-```js 
+**`fontSize`**
+```js filename="type"
  body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 ```
-- showFields
-```js 
+**`showFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- sortByFields
-```js 
+**`sortByFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- kanbanField
-```js 
+**`kanbanField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- swimLaneLabels
-```js 
+**`swimLaneLabels`**
+```js filename="type"
  @null | null | label,...
 ```
-- swimLaneColors
-```js 
+**`swimLaneColors`**
+```js filename="type"
  @null | null | ColorVar1, ColorVar2,...
 ```
-#### list
-- name
-```js 
+### list
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | SpreadsheetLayout1, SpreadsheetLayout2,...
 ```
-- groupByField
-```js 
+**`groupByField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- kind
-```js 
+**`kind`**
+```js filename="type"
  tab | tree
 ```
-- showSearchBar
-```js 
+**`showSearchBar`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- categoryFields
-```js 
+**`categoryFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- advanceFilterFields
-```js 
+**`advanceFilterFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- sortByFields
-```js 
+**`sortByFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-#### table
-- name
-```js 
+### table
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | SpreadsheetLayout1, SpreadsheetLayout2,...
 ```
-- showCommentCount
-```js 
+**`showCommentCount`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- pagination
-```js 
+**`pagination`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- rowsPerPage
-```js 
+**`rowsPerPage`**
+```js filename="type"
  @null | null | integer
 ```
-- showFields
-```js 
+**`showFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- masterDetailGrids
-```js 
+**`masterDetailGrids`**
+```js filename="type"
  @null | null | Grid1, Grid2,...
 ```
-- hideRowSeparator
-```js 
+**`hideRowSeparator`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- columnSizes
-```js 
+**`columnSizes`**
+```js filename="type"
  @null | null | AutoSize | Flex | [number]px | [number]em,...
 ```
-- sortByFields
-```js 
+**`sortByFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
 

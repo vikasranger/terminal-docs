@@ -2,17 +2,27 @@
 title: gridLayoutTableHeader
 ---
 
-### remove
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-- displayText
-```js 
+This command accepts the following arguments:
+
+**`displayText`**
+```js filename="type"
  @null | @empty | displayText
 ```
-- fields
-```js 
+**`fields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
 

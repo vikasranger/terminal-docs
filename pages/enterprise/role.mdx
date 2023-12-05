@@ -2,31 +2,45 @@
 title: role
 ---
 
-### update
+import { Callout } from 'nextra/components'
 
-- name
-```js 
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## update
+
+This command accepts the following arguments:
+
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### ensure
+## ensure
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 

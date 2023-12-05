@@ -2,43 +2,57 @@
 title: group
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-- name
-```js 
+This command accepts the following arguments:
+
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- allowPromptAssistant
-```js 
+**`allowPromptAssistant`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- pinnedActions
-```js 
+**`pinnedActions`**
+```js filename="type"
  @null | null | PinnedActions1, PinnedActions2,...
 ```
-- pinnedActionIdsForMobile
-```js 
+**`pinnedActionIdsForMobile`**
+```js filename="type"
  @null | null | PinnedActionsMobile1, PinnedActionsMobile2,...
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 

@@ -2,289 +2,308 @@
 title: gridLayout
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
 
-- kind
-```js 
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`kind`**
+```js filename="type"
  card | kanban | list | map | table | xyChart
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-#### card
-- name
-```js 
+This command accepts the following arguments:
+
+### card
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | GridLayoutSwitcher1, GridLayoutSwitcher2,...
 ```
-- groupByField
-```js 
+**`groupByField`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### kanban
-- name
-```js 
+### kanban
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | GridLayoutSwitcher1, GridLayoutSwitcher2,...
 ```
-- showCommentCount
-```js 
+**`showCommentCount`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showSectionName
-```js 
+**`showSectionName`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showFooter
-```js 
+**`showFooter`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- fontSize
-```js 
+**`fontSize`**
+```js filename="type"
  body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 ```
-- showFields
-```js 
+**`showFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- sortByFields
-```js 
+**`sortByFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- kanbanField
-```js 
+**`kanbanField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- swimLaneLabels
-```js 
+**`swimLaneLabels`**
+```js filename="type"
  @null | null | label,...
 ```
-- swimLaneColors
-```js 
+**`swimLaneColors`**
+```js filename="type"
  @null | null | ColorVar1, ColorVar2,...
 ```
-#### list
-- name
-```js 
+### list
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | GridLayoutSwitcher1, GridLayoutSwitcher2,...
 ```
-- groupByField
-```js 
+**`groupByField`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### map
-- name
-```js 
+### map
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | GridLayoutSwitcher1, GridLayoutSwitcher2,...
 ```
-- locationField
-```js 
+**`locationField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- toolTipFieldId
-```js 
+**`toolTipFieldId`**
+```js filename="type"
  @null | null | Symbol
 ```
-- colorField
-```js 
+**`colorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- shapeField
-```js 
+**`shapeField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- groupByField
-```js 
+**`groupByField`**
+```js filename="type"
  @null | null | Field | $CreatedBy,$CreatedOn,$RowId,$RowOrder,$UpdatedBy,$UpdatedOn...
 ```
-- strokeField
-```js 
+**`strokeField`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### table
-- name
-```js 
+### table
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | GridLayoutSwitcher1, GridLayoutSwitcher2,...
 ```
-- groupByField
-```js 
+**`groupByField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- hideRowSeparator
-```js 
+**`hideRowSeparator`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- pageSize
-```js 
+**`pageSize`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- showFields
-```js 
+**`showFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- columnSizes
-```js 
+**`columnSizes`**
+```js filename="type"
  @null | null | AutoSize | Flex | [number]px | [number]em,...
 ```
-- sortByFields
-```js 
+**`sortByFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- columnAlignments
-```js 
+**`columnAlignments`**
+```js filename="type"
  @null | null | bottom | center | diagonal | end | flexCenter | justify | overlayTop | spaceBetween | start | top
 ```
-- style
-```js 
+**`style`**
+```js filename="type"
  defaultStyle
 ```
-#### xyChart
-- name
-```js 
+### xyChart
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | text
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- toolTipField
-```js 
+**`toolTipField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- bkgColorField
-```js 
+**`bkgColorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- allowToSwitchLayouts
-```js 
+**`allowToSwitchLayouts`**
+```js filename="type"
  @null | null | GridLayoutSwitcher1, GridLayoutSwitcher2,...
 ```
-- xField
-```js 
+**`xField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- xFieldColor
-```js 
+**`xFieldColor`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- chartType
-```js 
+**`chartType`**
+```js filename="type"
  barGraph | doughnut | lineChart | pieChart | scatterPlot
 ```
-- yFields
-```js 
+**`yFields`**
+```js filename="type"
  @null | null | YField1, YField2,...
 ```
-- yFieldColors
-```js 
+**`yFieldColors`**
+```js filename="type"
  @null | null | YFieldColor1, YFieldColor2,...
 ```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
 

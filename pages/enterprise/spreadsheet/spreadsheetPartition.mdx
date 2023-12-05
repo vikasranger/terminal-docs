@@ -2,27 +2,41 @@
 title: spreadsheetPartition
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-- name
-```js 
+This command accepts the following arguments:
+
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- field
-```js 
- @null | null | sectionField/grid/field
+**`field`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 

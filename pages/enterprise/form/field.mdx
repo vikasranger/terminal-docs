@@ -2,5384 +2,5403 @@
 title: field
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
 
-- type
-```js 
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`type`**
+```js filename="type"
  audio | bool | button | camera | chipSet | chipSetDate | chipSetDateTime | chipSetDay | chipSetDeviceSize | chipSetDeviceType | chipSetTime | color | counter | currency | date | dateRange | dateTime | dateTimeRange | decimal | divider | document | duration | email | error | font | grid | handle | html | hyperlink | icon | identifier | image | info | label | language | lineStroke | location | logCounter | logDecimal | logNumber | mobileNumber | month | number | paragraph | pickGridRow | pickText | pickTree | pickUser | pinShape | propertyMap | quarter | rating | ref | rowId | scanCode | section | setOfLanguageKeys | setOfText | setOfUser | showCode | signature | slider | symbol | synthetic | text | time | timeZone | timer | userId | video | voice
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-#### audio
-- disabled
-```js 
+This command accepts the following arguments:
+
+### audio
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- audioFormatType
-```js 
+**`audioFormatType`**
+```js filename="type"
  mp3 | ogg | wav
 ```
-- maxSize
-```js 
+**`maxSize`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### bool
-- disabled
-```js 
+### bool
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- captureLocation
-```js 
+**`captureLocation`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureTime
-```js 
+**`captureTime`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureUser
-```js 
+**`captureUser`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- checkboxLabel
-```js 
+**`checkboxLabel`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- showAsCheckbox
-```js 
+**`showAsCheckbox`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- position
-```js 
+**`position`**
+```js filename="type"
  @null | @empty | @@themePlacement | themePlacement
 ```
-- labelPlacement
-```js 
+**`labelPlacement`**
+```js filename="type"
  @null | @empty | @@themePlacement | themePlacement
 ```
-- showCapturedValuesOnAside
-```js 
+**`showCapturedValuesOnAside`**
+```js filename="type"
  @null | null | captureLocation | captureTime | captureUser
 ```
-#### button
-- disabled
-```js 
+### button
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- buttonVariant
-```js 
+**`buttonVariant`**
+```js filename="type"
  @null | @empty | @@buttonVariant | buttonVariant
 ```
-- disableElevation
-```js 
+**`disableElevation`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- font
-```js 
+**`font`**
+```js filename="type"
  @null | @empty | @@font | font
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- iconPosition
-```js 
+**`iconPosition`**
+```js filename="type"
  @null | @empty | @@themePlacement | themePlacement
 ```
-- bkgColor
-```js 
+**`bkgColor`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- kind
-```js 
+**`kind`**
+```js filename="type"
  normal | refresh | reset | submit
 ```
-- btnPosDoNotInline
-```js 
+**`btnPosDoNotInline`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- btnPosToolbar
-```js 
+**`btnPosToolbar`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- btnPosFooter
-```js 
+**`btnPosFooter`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- btnPosMenu
-```js 
+**`btnPosMenu`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- actionCloseAside
-```js 
+**`actionCloseAside`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- executeActionsAfterPluginSuccess
-```js 
+**`executeActionsAfterPluginSuccess`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- actionSetDefaultFieldIds
-```js 
+**`actionSetDefaultFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionToggleBooleanFieldIds
-```js 
+**`actionToggleBooleanFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionStartTimerFieldIds
-```js 
+**`actionStartTimerFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionStopTimerFieldIds
-```js 
+**`actionStopTimerFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionVisibleFieldIds
-```js 
+**`actionVisibleFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionInvisibleFieldIds
-```js 
+**`actionInvisibleFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionEnableFieldIds
-```js 
+**`actionEnableFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionDisableFieldIds
-```js 
+**`actionDisableFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionClickButtonFieldIds
-```js 
+**`actionClickButtonFieldIds`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- actionOpenLinkInSameTab
-```js 
+**`actionOpenLinkInSameTab`**
+```js filename="type"
  @null | @empty | @@hyperlink | hyperlink
 ```
-- actionOpenLinkInNewTab
-```js 
+**`actionOpenLinkInNewTab`**
+```js filename="type"
  @null | @empty | @@hyperlink | hyperlink
 ```
-- actionOpenLinkInSameTabField
-```js 
+**`actionOpenLinkInSameTabField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- actionOpenLinkInNewTabField
-```js 
+**`actionOpenLinkInNewTabField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- spreadsheet
-```js 
+**`spreadsheet`**
+```js filename="type"
  @null | null | Symbol
 ```
-- saveToSpreadsheet
-```js 
+**`saveToSpreadsheet`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- pluginInputMapping
-```js 
+**`pluginInputMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-- pluginOutputMapping
-```js 
+**`pluginOutputMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-- pluginErrorField
-```js 
+**`pluginErrorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### camera
-- disabled
-```js 
+### camera
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- showSize
-```js 
+**`showSize`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- showPreview
-```js 
+**`showPreview`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- showLabel
-```js 
+**`showLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureLocation
-```js 
+**`captureLocation`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureTime
-```js 
+**`captureTime`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureUser
-```js 
+**`captureUser`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showCapturedValuesOnAside
-```js 
+**`showCapturedValuesOnAside`**
+```js filename="type"
  @null | null | captureLocation | captureTime | captureUser
 ```
-#### chipSet
-- disabled
-```js 
+### chipSet
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- allowDuplicate
-```js 
+**`allowDuplicate`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### chipSetDate
-- disabled
-```js 
+### chipSetDate
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### chipSetDateTime
-- disabled
-```js 
+### chipSetDateTime
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### chipSetDay
-- disabled
-```js 
+### chipSetDay
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### chipSetDeviceSize
-- disabled
-```js 
+### chipSetDeviceSize
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### chipSetDeviceType
-- disabled
-```js 
+### chipSetDeviceType
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### chipSetTime
-- disabled
-```js 
+### chipSetTime
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### color
-- disabled
-```js 
+### color
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### counter
-- disabled
-```js 
+### counter
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- step
-```js 
+**`step`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### currency
-- disabled
-```js 
+### currency
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### date
-- disabled
-```js 
+### date
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- displayDateFormat
-```js 
+**`displayDateFormat`**
+```js filename="type"
  @null | @empty | displayDateFormat
 ```
-#### dateRange
-- disabled
-```js 
+### dateRange
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- displayDateFormat
-```js 
+**`displayDateFormat`**
+```js filename="type"
  @null | @empty | displayDateFormat
 ```
-- minDefaultDate
-```js 
+**`minDefaultDate`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- maxDefaultDate
-```js 
+**`maxDefaultDate`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-#### dateTime
-- disabled
-```js 
+### dateTime
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@dateTime | dateTime
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@dateTime | dateTime
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@dateTime | dateTime
 ```
-- displayDateFormat
-```js 
+**`displayDateFormat`**
+```js filename="type"
  @null | @empty | displayDateFormat
 ```
-#### dateTimeRange
-- disabled
-```js 
+### dateTimeRange
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@date | date
 ```
-- displayDateFormat
-```js 
+**`displayDateFormat`**
+```js filename="type"
  @null | @empty | displayDateFormat
 ```
-- minDefaultDateTime
-```js 
+**`minDefaultDateTime`**
+```js filename="type"
  @null | @empty | @@dateTime | dateTime
 ```
-- maxDefaultDateTime
-```js 
+**`maxDefaultDateTime`**
+```js filename="type"
  @null | @empty | @@dateTime | dateTime
 ```
-#### decimal
-- disabled
-```js 
+### decimal
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- decimal
-```js 
+**`decimal`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### divider
-- disabled
-```js 
+### divider
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- color
-```js 
+**`color`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- dividerKind
-```js 
+**`dividerKind`**
+```js filename="type"
  @null | @empty | @@dividerKind | dividerKind
 ```
-#### document
-- disabled
-```js 
+### document
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- fileTypes
-```js 
+**`fileTypes`**
+```js filename="type"
  @null | null | any | csv | dll | doc | docx | jar | jpeg | jpg | mp3 | mp4 | pdf | png | svg | wav | xls | xlsx
 ```
-#### duration
-- disabled
-```js 
+### duration
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@duration | duration
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@duration | duration
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@duration | duration
 ```
-- autoFormatValue
-```js 
+**`autoFormatValue`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### email
-- disabled
-```js 
+### email
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@email | email
 ```
-- validDomains
-```js 
+**`validDomains`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- invalidDomains
-```js 
+**`invalidDomains`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- autoPickSelf
-```js 
+**`autoPickSelf`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### error
-- disabled
-```js 
+### error
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### font
-- disabled
-```js 
+### font
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@font | font
 ```
-#### handle
-- disabled
-```js 
+### handle
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@email | email
 ```
-- validDomains
-```js 
+**`validDomains`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- invalidDomains
-```js 
+**`invalidDomains`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- autoPickSelf
-```js 
+**`autoPickSelf`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- validMobileCountryCodes
-```js 
+**`validMobileCountryCodes`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- invalidMobileCountryCodes
-```js 
+**`invalidMobileCountryCodes`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-#### html
-- disabled
-```js 
+### html
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@paragraph | paragraph
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@paragraph | paragraph
 ```
-- showCloseButton
-```js 
+**`showCloseButton`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### hyperlink
-- disabled
-```js 
+### hyperlink
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@hyperlink | hyperlink
 ```
-#### icon
-- disabled
-```js 
+### icon
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### identifier
-- disabled
-```js 
+### identifier
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- textPattern
-```js 
+**`textPattern`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### image
-- disabled
-```js 
+### image
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- showSize
-```js 
+**`showSize`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- showPreview
-```js 
+**`showPreview`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- showLabel
-```js 
+**`showLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### info
-- disabled
-```js 
+### info
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- bold
-```js 
+**`bold`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- italic
-```js 
+**`italic`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- underline
-```js 
+**`underline`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- strikeThrough
-```js 
+**`strikeThrough`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- font
-```js 
+**`font`**
+```js filename="type"
  @null | @empty | @@font | font
 ```
-- textPattern
-```js 
+**`textPattern`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- color
-```js 
+**`color`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- justifyText
-```js 
+**`justifyText`**
+```js filename="type"
  @null | @empty | @@themePlacement | themePlacement
 ```
-- bgColor
-```js 
+**`bgColor`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- opacity
-```js 
+**`opacity`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- columnSpan
-```js 
+**`columnSpan`**
+```js filename="type"
  @null | null | integer
 ```
-- labelPattern
-```js 
+**`labelPattern`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- showCloseButton
-```js 
+**`showCloseButton`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- topPadding
-```js 
+**`topPadding`**
+```js filename="type"
  @null | @empty | @@dividerKind | dividerKind
 ```
-- bottomPadding
-```js 
+**`bottomPadding`**
+```js filename="type"
  @null | @empty | @@dividerKind | dividerKind
 ```
-- rightPadding
-```js 
+**`rightPadding`**
+```js filename="type"
  @null | @empty | @@dividerKind | dividerKind
 ```
-- leftPadding
-```js 
+**`leftPadding`**
+```js filename="type"
  @null | @empty | @@dividerKind | dividerKind
 ```
-- lineCount
-```js 
+**`lineCount`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- flexGrow
-```js 
+**`flexGrow`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showBorder
-```js 
+**`showBorder`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showLabel
-```js 
+**`showLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@paragraph | paragraph
 ```
-#### label
-- disabled
-```js 
+### label
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- bold
-```js 
+**`bold`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- italic
-```js 
+**`italic`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- underline
-```js 
+**`underline`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- strikeThrough
-```js 
+**`strikeThrough`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- font
-```js 
+**`font`**
+```js filename="type"
  @null | @empty | @@font | font
 ```
-- textPattern
-```js 
+**`textPattern`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- color
-```js 
+**`color`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- justifyText
-```js 
+**`justifyText`**
+```js filename="type"
  @null | @empty | @@themePlacement | themePlacement
 ```
-- bgColor
-```js 
+**`bgColor`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- opacity
-```js 
+**`opacity`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- columnSpan
-```js 
+**`columnSpan`**
+```js filename="type"
  @null | null | integer
 ```
-#### language
-- disabled
-```js 
+### language
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### lineStroke
-- disabled
-```js 
+### lineStroke
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@stroke | stroke
 ```
-#### location
-- disabled
-```js 
+### location
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- captureTime
-```js 
+**`captureTime`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureUser
-```js 
+**`captureUser`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- defaultVar
-```js 
+**`defaultVar`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### logCounter
-- disabled
-```js 
+### logCounter
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- step
-```js 
+**`step`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### logDecimal
-- disabled
-```js 
+### logDecimal
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@decimal | decimal
 ```
-- decimal
-```js 
+**`decimal`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### logNumber
-- disabled
-```js 
+### logNumber
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### mobileNumber
-- disabled
-```js 
+### mobileNumber
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@mobileNumber | mobileNumber
 ```
-- validCountryCodes
-```js 
+**`validCountryCodes`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- invalidCountryCodes
-```js 
+**`invalidCountryCodes`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- autoPickSelf
-```js 
+**`autoPickSelf`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### month
-- disabled
-```js 
+### month
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@month | month
 ```
-#### number
-- disabled
-```js 
+### number
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### paragraph
-- disabled
-```js 
+### paragraph
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@paragraph | paragraph
 ```
-- minCharCount
-```js 
+**`minCharCount`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- maxCharCount
-```js 
+**`maxCharCount`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- lineCount
-```js 
+**`lineCount`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### pickGridRow
-- disabled
-```js 
+### pickGridRow
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- grid
-```js 
+**`grid`**
+```js filename="type"
  @null | null | Symbol
 ```
-- gridDisplayField
-```js 
+**`gridDisplayField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- gridLayout
-```js 
+**`gridLayout`**
+```js filename="type"
  @null | null | Symbol
 ```
-- filterCondition
-```js 
+**`filterCondition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-#### pickText
-- disabled
-```js 
+### pickText
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- pluginName
-```js 
+**`pluginName`**
+```js filename="type"
  @null | @empty | pluginName
 ```
-- pluginApi
-```js 
+**`pluginApi`**
+```js filename="type"
  @null | null | Symbol
 ```
-- showAs
-```js 
+**`showAs`**
+```js filename="type"
  dropdown | led | radioButtonHorizontal | radioButtonVertical
 ```
-- pluginErrorField
-```js 
+**`pluginErrorField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- pluginInputMappingVar
-```js 
+**`pluginInputMappingVar`**
+```js filename="type"
  @null | null | Symbol
 ```
-- source
-```js 
+**`source`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- defaultOption
-```js 
+**`defaultOption`**
+```js filename="type"
  @null | @empty | sourceOption
 ```
-#### pickTree
-- disabled
-```js 
+### pickTree
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- pluginName
-```js 
+**`pluginName`**
+```js filename="type"
  @null | @empty | pluginName
 ```
-- pluginApi
-```js 
+**`pluginApi`**
+```js filename="type"
  @null | null | Symbol
 ```
-- sourceVar
-```js 
+**`sourceVar`**
+```js filename="type"
  @null | @empty | @@tree | tree
 ```
-- pluginErrorField
-```js 
- @null | null | sectionField/grid/field
+**`pluginErrorField`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- pluginInputMappingVar
-```js 
+**`pluginInputMappingVar`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### pickUser
-- disabled
-```js 
+### pickUser
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- pluginName
-```js 
+**`pluginName`**
+```js filename="type"
  @null | @empty | pluginName
 ```
-- pluginApi
-```js 
+**`pluginApi`**
+```js filename="type"
  @null | null | Symbol
 ```
-- dataSourceRoles
-```js 
+**`dataSourceRoles`**
+```js filename="type"
  @null | null | Role1, Role2,...
 ```
-- roleDataSourceConjunction
-```js 
+**`roleDataSourceConjunction`**
+```js filename="type"
  and | or
 ```
-- derivedFromUserFields
-```js 
+**`derivedFromUserFields`**
+```js filename="type"
  @null | @empty | null | sectionField, grid/field...
 ```
-- pluginErrorField
-```js 
- @null | null | sectionField/grid/field
+**`pluginErrorField`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- pluginInputMapping
-```js 
+**`pluginInputMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-- includeSelf
-```js 
+**`includeSelf`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### pinShape
-- disabled
-```js 
+### pinShape
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@mapPinShape | mapPinShape
 ```
-#### propertyMap
-- disabled
-```js 
+### propertyMap
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- default
-```js 
+**`default`**
+```js filename="type"
  @null | @empty | @@mapOfText | mapOfText
 ```
-#### quarter
-- disabled
-```js 
+### quarter
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@quarter | quarter
 ```
-#### rating
-- disabled
-```js 
+### rating
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- starCount
-```js 
+**`starCount`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- kind
-```js 
+**`kind`**
+```js filename="type"
  @null | @empty | @@ratingKind | ratingKind
 ```
-#### ref
-- disabled
-```js 
+### ref
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- copyFields
-```js 
+**`copyFields`**
+```js filename="type"
  @null | @empty | null | field1,field2,$CreatedBy | $CreatedOn | $RowId | $RowOrder | $UpdatedBy | $UpdatedOn...
 ```
-- forceOpenSpreadsheetBrowser
-```js 
+**`forceOpenSpreadsheetBrowser`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- spreadsheetLayout
-```js 
+**`spreadsheetLayout`**
+```js filename="type"
  @null | null | Symbol
 ```
-- categoryFilterDisplayField
-```js 
+**`categoryFilterDisplayField`**
+```js filename="type"
  @null | null | Symbol
 ```
-- filterCondition
-```js 
+**`filterCondition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-#### rowId
-- disabled
-```js 
+### rowId
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### scanCode
-- disabled
-```js 
+### scanCode
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- barCode
-```js 
+**`barCode`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- qrCode
-```js 
+**`qrCode`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureLocation
-```js 
+**`captureLocation`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureTime
-```js 
+**`captureTime`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureUser
-```js 
+**`captureUser`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showCapturedValuesOnAside
-```js 
+**`showCapturedValuesOnAside`**
+```js filename="type"
  @null | null | captureLocation | captureTime | captureUser
 ```
-#### setOfLanguageKeys
-- disabled
-```js 
+### setOfLanguageKeys
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### setOfText
-- disabled
-```js 
+### setOfText
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- pluginName
-```js 
+**`pluginName`**
+```js filename="type"
  @null | @empty | pluginName
 ```
-- pluginApi
-```js 
+**`pluginApi`**
+```js filename="type"
  @null | null | Symbol
 ```
-- showAs
-```js 
+**`showAs`**
+```js filename="type"
  dropdown | led | radioButtonHorizontal | radioButtonVertical
 ```
-- source
-```js 
+**`source`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- defaultOptions
-```js 
+**`defaultOptions`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- pluginErrorField
-```js 
- @null | null | sectionField/grid/field
+**`pluginErrorField`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- pluginInputMapping
-```js 
+**`pluginInputMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-#### setOfUser
-- disabled
-```js 
+### setOfUser
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- pluginName
-```js 
+**`pluginName`**
+```js filename="type"
  @null | @empty | pluginName
 ```
-- pluginApi
-```js 
+**`pluginApi`**
+```js filename="type"
  @null | null | Symbol
 ```
-- dataSourceRoles
-```js 
+**`dataSourceRoles`**
+```js filename="type"
  @null | null | Role1, Role2,...
 ```
-- roleDataSourceConjunction
-```js 
+**`roleDataSourceConjunction`**
+```js filename="type"
  and | or
 ```
-- derivedFromUserFields
-```js 
+**`derivedFromUserFields`**
+```js filename="type"
  @null | @empty | null | sectionField, grid/field...
 ```
-- pluginErrorField
-```js 
- @null | null | sectionField/grid/field
+**`pluginErrorField`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- pluginInputMapping
-```js 
+**`pluginInputMapping`**
+```js filename="type"
  @null | @empty | @@mapping | mapping
 ```
-- includeSelf
-```js 
+**`includeSelf`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### showCode
-- disabled
-```js 
+### showCode
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@paragraph | paragraph
 ```
-- codeType
-```js 
+**`codeType`**
+```js filename="type"
  barCode | qrCode
 ```
-- showLabel
-```js 
+**`showLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### signature
-- disabled
-```js 
+### signature
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- captureLocation
-```js 
+**`captureLocation`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureTime
-```js 
+**`captureTime`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureUser
-```js 
+**`captureUser`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showCapturedValuesOnAside
-```js 
+**`showCapturedValuesOnAside`**
+```js filename="type"
  @null | null | captureLocation | captureTime | captureUser
 ```
-#### slider
-- disabled
-```js 
+### slider
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- allowRangePicker
-```js 
+**`allowRangePicker`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showAsInputBox
-```js 
+**`showAsInputBox`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-#### symbol
-- disabled
-```js 
+### symbol
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### synthetic
-- disabled
-```js 
+### synthetic
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- valueKind
-```js 
+**`valueKind`**
+```js filename="type"
  createdByHandle | createdByNickName | createdOn | enterpriseName | updatedByHandle | updatedByNickName | updatedOn
 ```
-#### text
-- disabled
-```js 
+### text
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- minCharCount
-```js 
+**`minCharCount`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- maxCharCount
-```js 
+**`maxCharCount`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### time
-- disabled
-```js 
+### time
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- defaultValue
-```js 
+**`defaultValue`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- showSecond
-```js 
+**`showSecond`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- min
-```js 
+**`min`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- max
-```js 
+**`max`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-#### timeZone
-- disabled
-```js 
+### timeZone
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### timer
-- disabled
-```js 
+### timer
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- duration
-```js 
+**`duration`**
+```js filename="type"
  @null | @empty | @@duration | duration
 ```
-- onStopText
-```js 
+**`onStopText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- onErrorText
-```js 
+**`onErrorText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- onExitText
-```js 
+**`onExitText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- onStopClickButtonFields
-```js 
+**`onStopClickButtonFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- onErrorClickButtonFields
-```js 
+**`onErrorClickButtonFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-- onExitClickButtonFields
-```js 
+**`onExitClickButtonFields`**
+```js filename="type"
  @null | null | Field1, Field2,...
 ```
-#### userId
-- disabled
-```js 
+### userId
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- displayProperty
-```js 
+**`displayProperty`**
+```js filename="type"
  handle | nickName
 ```
-#### video
-- disabled
-```js 
+### video
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- maxSize
-```js 
+**`maxSize`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- showPreview
-```js 
+**`showPreview`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- showSize
-```js 
+**`showSize`**
+```js filename="type"
  @null | @empty | @@bool | bool
 ```
-- videoFormatType
-```js 
+**`videoFormatType`**
+```js filename="type"
  mp4
 ```
-#### voice
-- maxSize
-```js 
+### voice
+**`maxSize`**
+```js filename="type"
  @null | @empty | @@number | number
 ```
-- disabled
-```js 
+**`disabled`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  @null | @empty | @@condition | condition
 ```
-- formula
-```js 
+**`formula`**
+```js filename="type"
  @null | @empty | formula
 ```
-- autoFill
-```js 
+**`autoFill`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- autoFocus
-```js 
+**`autoFocus`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- required
-```js 
+**`required`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- hideLabel
-```js 
+**`hideLabel`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- placeHolder
-```js 
+**`placeHolder`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- icon
-```js 
+**`icon`**
+```js filename="type"
  @null | @empty | @@icon | icon
 ```
-- helperText
-```js 
+**`helperText`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- prefix
-```js 
+**`prefix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- suffix
-```js 
+**`suffix`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-- captureLocation
-```js 
+**`captureLocation`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureTime
-```js 
+**`captureTime`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- captureUser
-```js 
+**`captureUser`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- showCapturedValuesOnAside
-```js 
+**`showCapturedValuesOnAside`**
+```js filename="type"
  @null | null | captureLocation | captureTime | captureUser
 ```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
 

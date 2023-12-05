@@ -2,70 +2,89 @@
 title: automation
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
 
-- kind
-```js 
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`kind`**
+```js filename="type"
  scheduled | spreadsheet | webhook
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-#### scheduled
-- filterTags
-```js 
+This command accepts the following arguments:
+
+### scheduled
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | text
 ```
-- secondary
-```js 
+**`secondary`**
+```js filename="type"
  @null | @empty | text
 ```
-#### spreadsheet
-- filterTags
-```js 
+### spreadsheet
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | text
 ```
-- secondary
-```js 
+**`secondary`**
+```js filename="type"
  @null | @empty | text
 ```
-#### webhook
-- filterTags
-```js 
+### webhook
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | text
 ```
-- secondary
-```js 
+**`secondary`**
+```js filename="type"
  @null | @empty | text
 ```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
 

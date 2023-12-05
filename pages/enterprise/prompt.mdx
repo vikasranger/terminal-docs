@@ -2,35 +2,49 @@
 title: prompt
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-- filterTags
-```js 
+This command accepts the following arguments:
+
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- name
-```js 
+**`name`**
+```js filename="type"
  @null | null | Symbol
 ```
-- action
-```js 
+**`action`**
+```js filename="type"
  @null | null | Symbol
 ```
-- promptText
-```js 
+**`promptText`**
+```js filename="type"
  @null | @empty | text
 ```
-- reviewBeforeExecuting
-```js 
+**`reviewBeforeExecuting`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 

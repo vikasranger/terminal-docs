@@ -2,57 +2,61 @@
 title: varMappingField
 ---
 
-### update
+## update
 
-- fromContext
-```js 
+This command accepts the following arguments:
+
+**`fromContext`**
+```js filename="type"
  @null | @empty | caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
 ```
-- fromField
-```js 
- @null | null | sectionField/grid/field
+**`fromField`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- fromVar
-```js 
+**`fromVar`**
+```js filename="type"
  @null | null | Symbol
 ```
-- fromDerived
-```js 
+**`fromDerived`**
+```js filename="type"
  @null | null | Symbol
 ```
-- to
-```js 
- @null | null | sectionField/grid/field
+**`to`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- primary
-```js 
+**`primary`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
 
-### ensure
+## ensure
 
-- fromContext
-```js 
+This command accepts the following arguments:
+
+**`fromContext`**
+```js filename="type"
  @null | @empty | caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
 ```
-- fromField
-```js 
- @null | null | sectionField/grid/field
+**`fromField`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- fromVar
-```js 
+**`fromVar`**
+```js filename="type"
  @null | null | Symbol
 ```
-- fromDerived
-```js 
+**`fromDerived`**
+```js filename="type"
  @null | null | Symbol
 ```
-- to
-```js 
- @null | null | sectionField/grid/field
+**`to`**
+```js filename="type"
+ @null | null | sectionField | grid/field
 ```
-- primary
-```js 
+**`primary`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
 

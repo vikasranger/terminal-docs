@@ -2,54 +2,62 @@
 title: pluginResource
 ---
 
-### ensure
+## ensure
 
-- type
-```js 
+This command accepts the following arguments:
+
+**`type`**
+```js filename="type"
  dev | jar | rpc
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-#### dev
-- type
-```js 
+This command accepts the following arguments:
+
+### dev
+**`type`**
+```js filename="type"
  dev | jar | rpc
 ```
-- pluginConfigForm
-```js 
+**`pluginConfigForm`**
+```js filename="type"
  @null | null | Form | $FormMapOfOptions,$FormPickTree,$FormPluginConfig,$FormSetOfUser...
 ```
-- packageNameVar
-```js 
+**`packageNameVar`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### jar
-- type
-```js 
+### jar
+**`type`**
+```js filename="type"
  dev | jar | rpc
 ```
-- pluginConfigForm
-```js 
+**`pluginConfigForm`**
+```js filename="type"
  @null | null | Form | $FormMapOfOptions,$FormPickTree,$FormPluginConfig,$FormSetOfUser...
 ```
-- packageNameVar
-```js 
+**`packageNameVar`**
+```js filename="type"
  @null | @empty | @@text | text
 ```
-#### rpc
-- type
-```js 
+### rpc
+**`type`**
+```js filename="type"
  dev | jar | rpc
 ```
-- pluginConfigForm
-```js 
+**`pluginConfigForm`**
+```js filename="type"
  @null | null | Form | $FormMapOfOptions,$FormPickTree,$FormPluginConfig,$FormSetOfUser...
 ```
 

@@ -2,1420 +2,1439 @@
 title: variable
 ---
 
-### ensure
+import { Callout } from 'nextra/components'
 
-- kind
-```js 
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`kind`**
+```js filename="type"
  any | bool | buttonVariant | calendar | chipSetDay | chipSetTime | color | condition | currency | dataPartitionPeriod | dataPriority | date | dateTime | day | decimal | deviceSize | deviceType | direction | dividerKind | document | duration | email | fieldVariant | font | function | html | hyperlink | icon | image | imageCorner | language | location | mapOfText | mapPinShape | mapping | mobileNumber | month | number | paragraph | quarter | ratingKind | scheduler | sequence | setOfNumber | setOfText | stroke | symbol | text | themePlacement | time | timeZone | tree | userSetting
 ```
 
-### remove
+## remove
+
+This command doesn't require any additional arguments.
 
 
-### print
+## print
+
+This command doesn't require any additional arguments.
 
 
-### update
+## update
 
-#### any
-- name
-```js 
+This command accepts the following arguments:
+
+### any
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-#### bool
-- name
-```js 
+### bool
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | @null | true | false | yes | no
 ```
-#### buttonVariant
-- name
-```js 
+### buttonVariant
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  contained | icon | outlined | text
 ```
-#### calendar
-- name
-```js 
+### calendar
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- nameDate
-```js 
+**`nameDate`**
+```js filename="type"
  @null | @empty | text
 ```
-- date
-```js 
+**`date`**
+```js filename="type"
  @null | null | dd/MM/yyyy | date
 ```
-#### chipSetDay
-- name
-```js 
+### chipSetDay
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | null | friday | monday | saturday | sunday | thursday | tuesday | wednesday
 ```
-#### chipSetTime
-- name
-```js 
+### chipSetTime
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | null | time,...
 ```
-#### color
-- name
-```js 
+### color
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  amber | black | blue | cyan | deepOrange | deepPurple | error | errorDark | errorLight | green | grey | indigo | info | infoDark | infoLight | lightBlue | lightGreen | lime | orange | pink | primary | primaryDark | primaryLight | purple | red | secondary | secondaryDark | secondaryLight | success | successDark | successLight | teal | textDisabled | textInverse | textPrimary | textSecondary | transparent | warning | warningDark | warningLight | white | yellow
 ```
-#### condition
-- name
-```js 
+### condition
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- fromSourcePlugin
-```js 
+**`fromSourcePlugin`**
+```js filename="type"
  @null | @empty | fromSourcePlugin
 ```
-- inputForm
-```js 
+**`inputForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- sourceForm
-```js 
+**`sourceForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- sourceGrid
-```js 
+**`sourceGrid`**
+```js filename="type"
  @null | null | Symbol
 ```
-- condition
-```js 
+**`condition`**
+```js filename="type"
  And(statement1, Or(Statement2,Statement3, And(Statement6,Statement7)), Statement4)
 ```
-#### currency
-- name
-```js 
+### currency
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | currencyCode
 ```
-#### dataPartitionPeriod
-- name
-```js 
+### dataPartitionPeriod
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  daily | hourly | monthly | quarterly | weekly | yearly
 ```
-#### dataPriority
-- name
-```js 
+### dataPriority
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  high | low | medium
 ```
-#### date
-- name
-```js 
+### date
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
 ```
-#### dateTime
-- name
-```js 
+### dateTime
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
 ```
-#### day
-- name
-```js 
+### day
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  friday | monday | saturday | sunday | thursday | tuesday | wednesday
 ```
-#### decimal
-- name
-```js 
+### decimal
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | decimal
 ```
-#### deviceSize
-- name
-```js 
+### deviceSize
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  desktop | laptop | mobile | tablet
 ```
-#### deviceType
-- name
-```js 
+### deviceType
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  agent | android | ios | test | web
 ```
-#### direction
-- name
-```js 
+### direction
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  horizontal | vertical
 ```
-#### dividerKind
-- name
-```js 
+### dividerKind
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  thick | thin
 ```
-#### document
-- name
-```js 
+### document
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-#### duration
-- name
-```js 
+### duration
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | duration
 ```
-#### email
-- name
-```js 
+### email
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | email
 ```
-#### fieldVariant
-- name
-```js 
+### fieldVariant
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  filled | outlined | standard
 ```
-#### font
-- name
-```js 
+### font
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 ```
-#### function
-- name
-```js 
+### function
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- outputKind
-```js 
+**`outputKind`**
+```js filename="type"
  number | numberArray | text | textArray
 ```
-- javascript
-```js 
+**`javascript`**
+```js filename="type"
  @null | @empty | javascript
 ```
-- inputArgs
-```js 
+**`inputArgs`**
+```js filename="type"
  A1:<ArgType>, A2?:<ArgType> ArgType: number | numberArray | text | textArray
 ```
-#### html
-- name
-```js 
+### html
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-#### hyperlink
-- name
-```js 
+### hyperlink
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | text
 ```
-- displayText
-```js 
+**`displayText`**
+```js filename="type"
  @null | @empty | text
 ```
-- color
-```js 
+**`color`**
+```js filename="type"
  @null | @empty | @@color | color
 ```
-- kind
-```js 
+**`kind`**
+```js filename="type"
  general | youtube
 ```
-#### icon
-- name
-```js 
+### icon
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | icon
 ```
-#### image
-- name
-```js 
+### image
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-#### imageCorner
-- name
-```js 
+### imageCorner
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  circle | rectangle | rounded
 ```
-#### language
-- name
-```js 
+### language
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | language
 ```
-#### location
-- name
-```js 
+### location
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-#### mapOfText
-- name
-```js 
+### mapOfText
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- form
-```js 
+**`form`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### mapPinShape
-- name
-```js 
+### mapPinShape
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  circle | circleBig | circleMedium | heart | heartBig | heartMedium | pin | square | squareBig | squareMedium | star | starBig | starMedium | triangle | triangleBig | triangleMedium
 ```
-#### mapping
-- name
-```js 
+### mapping
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- fromForm
-```js 
+**`fromForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- fromGrid
-```js 
+**`fromGrid`**
+```js filename="type"
  @null | null | Symbol
 ```
-- fromPlugin
-```js 
+**`fromPlugin`**
+```js filename="type"
  @null | @empty | fromPlugin
 ```
-- toForm
-```js 
+**`toForm`**
+```js filename="type"
  @null | null | Symbol
 ```
-- toGrid
-```js 
+**`toGrid`**
+```js filename="type"
  @null | null | Symbol
 ```
-- toPlugin
-```js 
+**`toPlugin`**
+```js filename="type"
  @null | @empty | toPlugin
 ```
-#### mobileNumber
-- name
-```js 
+### mobileNumber
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | mobileNumber
 ```
-#### month
-- name
-```js 
+### month
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  April | August | December | February | January | July | June | March | May | November | October | September
 ```
-#### number
-- name
-```js 
+### number
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | null | long1, long2, ...
 ```
-#### paragraph
-- name
-```js 
+### paragraph
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | text
 ```
-- params
-```js 
+**`params`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-#### quarter
-- name
-```js 
+### quarter
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  Quarter_1 | Quarter_2 | Quarter_3 | Quarter_4
 ```
-#### ratingKind
-- name
-```js 
+### ratingKind
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  heart | star | thumbs
 ```
-#### scheduler
-- name
-```js 
+### scheduler
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- startDateTime
-```js 
+**`startDateTime`**
+```js filename="type"
  @null | null | dd/MM/yyyy hh:mm:ss am/pm | startDateTime
 ```
-- timeZone
-```js 
+**`timeZone`**
+```js filename="type"
  @null | @empty | Timezone
 ```
-- repeatFrequencyKind
-```js 
+**`repeatFrequencyKind`**
+```js filename="type"
  days | hours | minutes | months | weeks | years
 ```
-#### sequence
-- name
-```js 
+### sequence
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | seqStart
 ```
-#### setOfNumber
-- name
-```js 
+### setOfNumber
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | null | number1, number2,...
 ```
-#### setOfText
-- name
-```js 
+### setOfText
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- colors
-```js 
+**`colors`**
+```js filename="type"
  @null | null | amber | black | blue | cyan | deepOrange | deepPurple | error | errorDark | errorLight | green | grey | indigo | info | infoDark | infoLight | lightBlue | lightGreen | lime | orange | pink | primary | primaryDark | primaryLight | purple | red | secondary | secondaryDark | secondaryLight | success | successDark | successLight | teal | textDisabled | textInverse | textPrimary | textSecondary | transparent | warning | warningDark | warningLight | white | yellow
 ```
-- shades
-```js 
+**`shades`**
+```js filename="type"
  @null | null | s100 | s200 | s50 | s500
 ```
-#### stroke
-- name
-```js 
+### stroke
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  dash | dotted | solid
 ```
-#### symbol
-- name
-```js 
+### symbol
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | null | Symbol
 ```
-#### text
-- name
-```js 
+### text
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | text
 ```
-- params
-```js 
+**`params`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-#### themePlacement
-- name
-```js 
+### themePlacement
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  bottom | center | diagonal | end | flexCenter | justify | overlayTop | spaceBetween | start | top
 ```
-#### time
-- name
-```js 
+### time
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | time
 ```
-#### timeZone
-- name
-```js 
+### timeZone
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- value
-```js 
+**`value`**
+```js filename="type"
  @null | @empty | timeZone
 ```
-#### tree
-- name
-```js 
+### tree
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- paths
-```js 
+**`paths`**
+```js filename="type"
  @null | null | a1/b1/c1, a1/b1/c2, a1/b2/c3,...
 ```
-#### userSetting
-- name
-```js 
+### userSetting
+**`name`**
+```js filename="type"
  Symbol
 ```
-- label
-```js 
+**`label`**
+```js filename="type"
  @null | @empty | label
 ```
-- description
-```js 
+**`description`**
+```js filename="type"
  @null | @empty | paragraph
 ```
-- filterTags
-```js 
+**`filterTags`**
+```js filename="type"
  @null | null | text1, text2,...
 ```
-- deploy
-```js 
+**`deploy`**
+```js filename="type"
  fixedOnDeploy | requiredOnDeploy
 ```
-- kind
-```js 
+**`kind`**
+```js filename="type"
  pickMany | pickOne | text
 ```
-- dataSource
-```js 
+**`dataSource`**
+```js filename="type"
  @null | @empty | @@setOfText | setOfText
 ```
-- excludeOnUserSettings
-```js 
+**`excludeOnUserSettings`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
-- doNotShowValueToAdmin
-```js 
+**`doNotShowValueToAdmin`**
+```js filename="type"
  @null | null | true | false | yes | no
 ```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
 
