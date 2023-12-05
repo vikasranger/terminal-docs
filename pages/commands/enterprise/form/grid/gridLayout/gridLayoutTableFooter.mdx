@@ -1,0 +1,36 @@
+---
+title: gridLayoutTableFooter
+---
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## update
+
+This command accepts the following arguments:
+
+**`displayField`**
+```js filename="type"
+ null | Symbol
+```
+**`fields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`showLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`alignment`**
+```js filename="type"
+ bottom | center | diagonal | end | flexCenter | justify | overlayTop | spaceBetween | start | top
+```
+

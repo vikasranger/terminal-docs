@@ -1,0 +1,58 @@
+---
+title: driveSheet
+---
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command doesn't require any additional arguments.
+
+
+## update
+
+This command accepts the following arguments:
+
+**`driveType`**
+```js filename="type"
+ master | partitioned
+```
+**`roles`**
+```js filename="type"
+ null | @empty | Role1, Role2,...
+```
+**`mediaRoles`**
+```js filename="type"
+ null | @empty | MediaRole1, MediaRole2,...
+```
+**`dataPartitionPeriod`**
+```js filename="type"
+ @null | @empty | @@dataPartitionPeriod | dataPartitionPeriod
+```
+**`dataRetentionDuration`**
+```js filename="type"
+ @null | @empty | @@duration | duration
+```
+**`dataUpdateDuration`**
+```js filename="type"
+ @null | @empty | @@duration | duration
+```
+**`dataPriority`**
+```js filename="type"
+ @null | @empty | @@dataPriority | dataPriority
+```
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## print
+
+This command doesn't require any additional arguments.
+
+
