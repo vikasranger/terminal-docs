@@ -1,0 +1,101 @@
+---
+title: automationEvent
+---
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## print
+
+This command doesn't require any additional arguments.
+
+
+## ensure
+
+This command accepts the following arguments:
+
+### scheduled
+**`type`**
+```js filename="type"
+ onFire
+```
+### spreadsheet
+**`type`**
+```js filename="type"
+ afterInsert | afterRemove | afterUpdate | beforeInsert | beforeRemove | beforeUpdate
+```
+### webhook
+**`type`**
+```js filename="type"
+ onFire
+```
+
+## update
+
+This command accepts the following arguments:
+
+### scheduled
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`secondary`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+### spreadsheet
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`secondary`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+### webhook
+**`name`**
+```js filename="type"
+ null | Symbol
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`secondary`**
+```js filename="type"
+ null | @null | @empty | text
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
+

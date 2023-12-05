@@ -1,0 +1,5404 @@
+---
+title: field
+---
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+**`type`**
+```js filename="type"
+ audio | bool | button | camera | chipSet | chipSetDate | chipSetDateTime | chipSetDay | chipSetDeviceSize | chipSetDeviceType | chipSetTime | color | counter | currency | date | dateRange | dateTime | dateTimeRange | decimal | divider | document | duration | email | error | font | grid | handle | html | hyperlink | icon | identifier | image | info | label | language | lineStroke | location | logCounter | logDecimal | logNumber | mobileNumber | month | number | paragraph | pickGridRow | pickText | pickTree | pickUser | pinShape | propertyMap | quarter | rating | ref | rowId | scanCode | section | setOfLanguageKeys | setOfText | setOfUser | showCode | signature | slider | symbol | synthetic | text | time | timeZone | timer | userId | video | voice
+```
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## print
+
+This command doesn't require any additional arguments.
+
+
+## update
+
+This command accepts the following arguments:
+
+### audio
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`audioFormatType`**
+```js filename="type"
+ mp3 | ogg | wav
+```
+**`maxSize`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### bool
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`captureLocation`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureTime`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureUser`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`checkboxLabel`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`showAsCheckbox`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`position`**
+```js filename="type"
+ @null | @empty | @@themePlacement | themePlacement
+```
+**`labelPlacement`**
+```js filename="type"
+ @null | @empty | @@themePlacement | themePlacement
+```
+**`showCapturedValuesOnAside`**
+```js filename="type"
+ null | @empty | captureLocation | captureTime | captureUser
+```
+### button
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`buttonVariant`**
+```js filename="type"
+ @null | @empty | @@buttonVariant | buttonVariant
+```
+**`disableElevation`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`font`**
+```js filename="type"
+ @null | @empty | @@font | font
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`iconPosition`**
+```js filename="type"
+ @null | @empty | @@themePlacement | themePlacement
+```
+**`bkgColor`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`kind`**
+```js filename="type"
+ normal | refresh | reset | submit
+```
+**`btnPosDoNotInline`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`btnPosToolbar`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`btnPosFooter`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`btnPosMenu`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`actionCloseAside`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`executeActionsAfterPluginSuccess`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`actionSetDefaultFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionToggleBooleanFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionStartTimerFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionStopTimerFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionVisibleFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionInvisibleFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionEnableFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionDisableFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionClickButtonFieldIds`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`actionOpenLinkInSameTab`**
+```js filename="type"
+ @null | @empty | @@hyperlink | hyperlink
+```
+**`actionOpenLinkInNewTab`**
+```js filename="type"
+ @null | @empty | @@hyperlink | hyperlink
+```
+**`actionOpenLinkInSameTabField`**
+```js filename="type"
+ null | Symbol
+```
+**`actionOpenLinkInNewTabField`**
+```js filename="type"
+ null | Symbol
+```
+**`spreadsheet`**
+```js filename="type"
+ null | Symbol
+```
+**`saveToSpreadsheet`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`pluginInputMapping`**
+```js filename="type"
+ @null | @empty | @@mapping | mapping
+```
+**`pluginOutputMapping`**
+```js filename="type"
+ @null | @empty | @@mapping | mapping
+```
+**`pluginErrorField`**
+```js filename="type"
+ null | Symbol
+```
+### camera
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`showSize`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`showPreview`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`showLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureLocation`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureTime`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureUser`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showCapturedValuesOnAside`**
+```js filename="type"
+ null | @empty | captureLocation | captureTime | captureUser
+```
+### chipSet
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`allowDuplicate`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### chipSetDate
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### chipSetDateTime
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### chipSetDay
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### chipSetDeviceSize
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### chipSetDeviceType
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### chipSetTime
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### color
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### counter
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`step`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### currency
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### date
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`displayDateFormat`**
+```js filename="type"
+ null | @null | @empty | displayDateFormat
+```
+### dateRange
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`displayDateFormat`**
+```js filename="type"
+ null | @null | @empty | displayDateFormat
+```
+**`minDefaultDate`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`maxDefaultDate`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+### dateTime
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@dateTime | dateTime
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@dateTime | dateTime
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@dateTime | dateTime
+```
+**`displayDateFormat`**
+```js filename="type"
+ null | @null | @empty | displayDateFormat
+```
+### dateTimeRange
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@date | date
+```
+**`displayDateFormat`**
+```js filename="type"
+ null | @null | @empty | displayDateFormat
+```
+**`minDefaultDateTime`**
+```js filename="type"
+ @null | @empty | @@dateTime | dateTime
+```
+**`maxDefaultDateTime`**
+```js filename="type"
+ @null | @empty | @@dateTime | dateTime
+```
+### decimal
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`decimal`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### divider
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`color`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`dividerKind`**
+```js filename="type"
+ @null | @empty | @@dividerKind | dividerKind
+```
+### document
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`fileTypes`**
+```js filename="type"
+ null | @empty | any | csv | dll | doc | docx | jar | jpeg | jpg | mp3 | mp4 | pdf | png | svg | wav | xls | xlsx
+```
+### duration
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@duration | duration
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@duration | duration
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@duration | duration
+```
+**`autoFormatValue`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### email
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@email | email
+```
+**`validDomains`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`invalidDomains`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`autoPickSelf`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### error
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### font
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@font | font
+```
+### handle
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@email | email
+```
+**`validDomains`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`invalidDomains`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`autoPickSelf`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`validMobileCountryCodes`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`invalidMobileCountryCodes`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+### html
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@paragraph | paragraph
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@paragraph | paragraph
+```
+**`showCloseButton`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### hyperlink
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@hyperlink | hyperlink
+```
+### icon
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### identifier
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`textPattern`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### image
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`showSize`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`showPreview`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`showLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### info
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`bold`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`italic`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`underline`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`strikeThrough`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`font`**
+```js filename="type"
+ @null | @empty | @@font | font
+```
+**`textPattern`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`color`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`justifyText`**
+```js filename="type"
+ @null | @empty | @@themePlacement | themePlacement
+```
+**`bgColor`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`opacity`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`columnSpan`**
+```js filename="type"
+ null | integer
+```
+**`labelPattern`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`showCloseButton`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`topPadding`**
+```js filename="type"
+ @null | @empty | @@dividerKind | dividerKind
+```
+**`bottomPadding`**
+```js filename="type"
+ @null | @empty | @@dividerKind | dividerKind
+```
+**`rightPadding`**
+```js filename="type"
+ @null | @empty | @@dividerKind | dividerKind
+```
+**`leftPadding`**
+```js filename="type"
+ @null | @empty | @@dividerKind | dividerKind
+```
+**`lineCount`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`flexGrow`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showBorder`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@paragraph | paragraph
+```
+### label
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`bold`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`italic`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`underline`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`strikeThrough`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`font`**
+```js filename="type"
+ @null | @empty | @@font | font
+```
+**`textPattern`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`color`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`justifyText`**
+```js filename="type"
+ @null | @empty | @@themePlacement | themePlacement
+```
+**`bgColor`**
+```js filename="type"
+ @null | @empty | @@color | color
+```
+**`opacity`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`columnSpan`**
+```js filename="type"
+ null | integer
+```
+### language
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### lineStroke
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@stroke | stroke
+```
+### location
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`captureTime`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureUser`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`defaultVar`**
+```js filename="type"
+ null | Symbol
+```
+### logCounter
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`step`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### logDecimal
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@decimal | decimal
+```
+**`decimal`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### logNumber
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### mobileNumber
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@mobileNumber | mobileNumber
+```
+**`validCountryCodes`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`invalidCountryCodes`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`autoPickSelf`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### month
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@month | month
+```
+### number
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### paragraph
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@paragraph | paragraph
+```
+**`minCharCount`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`maxCharCount`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`lineCount`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### pickGridRow
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`grid`**
+```js filename="type"
+ null | Symbol
+```
+**`gridDisplayField`**
+```js filename="type"
+ null | Symbol
+```
+**`gridLayout`**
+```js filename="type"
+ null | Symbol
+```
+**`filterCondition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+### pickText
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`pluginName`**
+```js filename="type"
+ null | @null | @empty | pluginName
+```
+**`pluginApi`**
+```js filename="type"
+ null | Symbol
+```
+**`showAs`**
+```js filename="type"
+ dropdown | led | radioButtonHorizontal | radioButtonVertical
+```
+**`pluginErrorField`**
+```js filename="type"
+ null | Symbol
+```
+**`pluginInputMappingVar`**
+```js filename="type"
+ null | Symbol
+```
+**`source`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`defaultOption`**
+```js filename="type"
+ null | @null | @empty | sourceOption
+```
+### pickTree
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`pluginName`**
+```js filename="type"
+ null | @null | @empty | pluginName
+```
+**`pluginApi`**
+```js filename="type"
+ null | Symbol
+```
+**`sourceVar`**
+```js filename="type"
+ @null | @empty | @@tree | tree
+```
+**`pluginErrorField`**
+```js filename="type"
+ null | sectionField | grid/field
+```
+**`pluginInputMappingVar`**
+```js filename="type"
+ null | Symbol
+```
+### pickUser
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`pluginName`**
+```js filename="type"
+ null | @null | @empty | pluginName
+```
+**`pluginApi`**
+```js filename="type"
+ null | Symbol
+```
+**`dataSourceRoles`**
+```js filename="type"
+ null | @empty | Role1, Role2,...
+```
+**`roleDataSourceConjunction`**
+```js filename="type"
+ and | or
+```
+**`derivedFromUserFields`**
+```js filename="type"
+ null | @empty | sectionField, grid/field...
+```
+**`pluginErrorField`**
+```js filename="type"
+ null | sectionField | grid/field
+```
+**`pluginInputMapping`**
+```js filename="type"
+ @null | @empty | @@mapping | mapping
+```
+**`includeSelf`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### pinShape
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@mapPinShape | mapPinShape
+```
+### propertyMap
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`default`**
+```js filename="type"
+ @null | @empty | @@mapOfText | mapOfText
+```
+### quarter
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@quarter | quarter
+```
+### rating
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`starCount`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`kind`**
+```js filename="type"
+ @null | @empty | @@ratingKind | ratingKind
+```
+### ref
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`copyFields`**
+```js filename="type"
+ null | @empty | field1, field2, $CreatedBy | $CreatedOn | $RowId | $RowOrder | $UpdatedBy | $UpdatedOn...
+```
+**`forceOpenSpreadsheetBrowser`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`spreadsheetLayout`**
+```js filename="type"
+ null | Symbol
+```
+**`categoryFilterDisplayField`**
+```js filename="type"
+ null | Symbol
+```
+**`filterCondition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+### rowId
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### scanCode
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`barCode`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`qrCode`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureLocation`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureTime`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureUser`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showCapturedValuesOnAside`**
+```js filename="type"
+ null | @empty | captureLocation | captureTime | captureUser
+```
+### setOfLanguageKeys
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### setOfText
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`pluginName`**
+```js filename="type"
+ null | @null | @empty | pluginName
+```
+**`pluginApi`**
+```js filename="type"
+ null | Symbol
+```
+**`showAs`**
+```js filename="type"
+ dropdown | led | radioButtonHorizontal | radioButtonVertical
+```
+**`source`**
+```js filename="type"
+ @null | @empty | @@setOfText | setOfText
+```
+**`defaultOptions`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`pluginErrorField`**
+```js filename="type"
+ null | sectionField | grid/field
+```
+**`pluginInputMapping`**
+```js filename="type"
+ @null | @empty | @@mapping | mapping
+```
+### setOfUser
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`pluginName`**
+```js filename="type"
+ null | @null | @empty | pluginName
+```
+**`pluginApi`**
+```js filename="type"
+ null | Symbol
+```
+**`dataSourceRoles`**
+```js filename="type"
+ null | @empty | Role1, Role2,...
+```
+**`roleDataSourceConjunction`**
+```js filename="type"
+ and | or
+```
+**`derivedFromUserFields`**
+```js filename="type"
+ null | @empty | sectionField, grid/field...
+```
+**`pluginErrorField`**
+```js filename="type"
+ null | sectionField | grid/field
+```
+**`pluginInputMapping`**
+```js filename="type"
+ @null | @empty | @@mapping | mapping
+```
+**`includeSelf`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### showCode
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@paragraph | paragraph
+```
+**`codeType`**
+```js filename="type"
+ barCode | qrCode
+```
+**`showLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### signature
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`captureLocation`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureTime`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureUser`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showCapturedValuesOnAside`**
+```js filename="type"
+ null | @empty | captureLocation | captureTime | captureUser
+```
+### slider
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`allowRangePicker`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showAsInputBox`**
+```js filename="type"
+ null | true | false | yes | no
+```
+### symbol
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### synthetic
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`valueKind`**
+```js filename="type"
+ createdByHandle | createdByNickName | createdOn | enterpriseName | updatedByHandle | updatedByNickName | updatedOn
+```
+### text
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`minCharCount`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`maxCharCount`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### time
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`defaultValue`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`showSecond`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`min`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`max`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+### timeZone
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+### timer
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`duration`**
+```js filename="type"
+ @null | @empty | @@duration | duration
+```
+**`onStopText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`onErrorText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`onExitText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`onStopClickButtonFields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`onErrorClickButtonFields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+**`onExitClickButtonFields`**
+```js filename="type"
+ null | @empty | Field1, Field2,...
+```
+### userId
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`displayProperty`**
+```js filename="type"
+ handle | nickName
+```
+### video
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`maxSize`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`showPreview`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`showSize`**
+```js filename="type"
+ @null | @empty | @@bool | bool
+```
+**`videoFormatType`**
+```js filename="type"
+ mp4
+```
+### voice
+**`maxSize`**
+```js filename="type"
+ @null | @empty | @@number | number
+```
+**`disabled`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`name`**
+```js filename="type"
+ Symbol
+```
+**`label`**
+```js filename="type"
+ null | @null | @empty | label
+```
+**`description`**
+```js filename="type"
+ null | @null | @empty | paragraph
+```
+**`filterTags`**
+```js filename="type"
+ null | @null | @empty | text1, text2,...
+```
+**`condition`**
+```js filename="type"
+ @null | @empty | @@condition | condition
+```
+**`formula`**
+```js filename="type"
+ null | @null | @empty | formula
+```
+**`autoFill`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`autoFocus`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`required`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`hideLabel`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`placeHolder`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`icon`**
+```js filename="type"
+ @null | @empty | @@icon | icon
+```
+**`helperText`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`prefix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`suffix`**
+```js filename="type"
+ @null | @empty | @@text | text
+```
+**`captureLocation`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureTime`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`captureUser`**
+```js filename="type"
+ null | true | false | yes | no
+```
+**`showCapturedValuesOnAside`**
+```js filename="type"
+ null | @empty | captureLocation | captureTime | captureUser
+```
+
+## goTo
+
+
+This command doesn't require any additional arguments.
+
