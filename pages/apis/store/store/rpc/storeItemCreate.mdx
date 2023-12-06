@@ -1,0 +1,1238 @@
+# storeItemCreate
+
+## API Details
+
+- **Description** Create store item
+- **Version** `v1`
+- **Method** `post`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "adminId": "AdminId",
+  "storeItem": {
+    "storeItemId": "StoreItemId",
+    "artifactKind": "ent | plugin",
+    "studioEnt?": {
+      "version?": "string",
+      "creationTime?": "string",
+      "lastUpdateTime?": "string",
+      "createdBy?": "AdminId",
+      "lastUpdateBy?": "AdminId",
+      "entId": "EntId",
+      "about": {
+        "name": "string",
+        "about?": "string",
+        "storeAbout?": "string",
+        "avatarId?": "MediaIdAvatar",
+        "allFilterTags": {
+          "keys": [
+            "MetaIdFilterTag"
+          ],
+          "map": {
+            "MetaIdFilterTag": {
+              "metaId": "MetaIdFilterTag",
+              "name": "string",
+              "storeVersionId?": "StoreVersionId"
+            }
+          },
+          "storeVersionId?": "StoreVersionId"
+        },
+        "languageSet?": [
+          "LanguageKey"
+        ],
+        "storeLabelSet?": [
+          "AI | API | Access | Account | Adapter | Aerospace | Analytics | Apple | Application | Approval | Asia | Asset | Attendance | Australia | Automotive | BI | Backup | Banking | Bill | Brass | Buffer | Bug | Buyer | CPG | CPU | CRM | Call | Canada | Care | Career | Cart | Case | Center | Chatbot | Chemicals | China | City | Claim | Collaboration | Communication | Compliance | Connector | Construction | Content | Conversation | Copper | Customer | Data | Defense | Desk | Digital | Distribution | Document | Donor | EDI | EPM | ERP | Education | Elderly | Engagement | Enterprise | Estimate | Europe | Event | Execution | FMCG | Facebook | Factory | Fare | Federal | FieldOps | Financial | Food | Force | Forecast | France | Franchise | Gas | Germany | Goal | Gold | Google | Governance | Government | Gym | HCM | HR | HRA | Hardware | Health | Healthcare | Higher | Hospital | Hospitality | Hosting | Hub | Hubspot | IOT | ITSM | IaaS | Identity | Incident | India | Information | Insurance | Intel | Interview | Inventory | Issue | Jewellery | K387 | Lead | Leave | Leisure | Life | Loan | Local | Location | Logistics | Maintenance | Management | Manufacturing | Maps | Marketing | Master | Media | Meeting | Microsoft | Mobile | Municipality | NonProfit | Offline | Oil | Operations | Opportunity | Optimization | Oracle | Order | PLM | POS | PPM | PaaS | Payment | Payroll | Performance | Pharmaceuticals | Planning | Plastics | Platform | Plugin | Point | Portfolio | Privacy | Procurement | Product | Professional | Property | Public | Quality | Questionnaire | Quote | RPA | RealEstate | Receipts | Record | Recreation | Recruiting | Resource | Retail | Return | Revenue | Review | Risk | Robot | Routing | SAP | SCM | SPM | SaaS | Safety | Sales | SalesForce | Scheduling | School | Sciences | Security | Self | Service | ServiceNow | Shopping | Silver | Smart | Social | Software | Specialty | Spot | Spreadsheet | Stall | State | Store | Subscription | Supplier | Survey | System | TRM | Templates | Testing | Tiles | Time | Tracking | Transportation | USA | Utilities | Vendor | Virtual | Visibility | Warehouse | Web | WhatsApp | Workforce | Youth | Zen | Zendesk | eCommerce"
+        ],
+        "timeZone?": "TimeZoneKey",
+        "displayDateFormat?": "string",
+        "storeVersionId?": "StoreVersionId"
+      },
+      "varMap": {
+        "keys": [
+          "MetaIdVar"
+        ],
+        "map": {
+          "MetaIdVar": {
+            "metaId": "MetaIdVar",
+            "details": {
+              "description?": "string",
+              "name": "Symbol",
+              "label?": "string",
+              "filterTags?": {
+                "filterTagSet": [
+                  "MetaIdFilterTag"
+                ],
+                "storeVersionId?": "StoreVersionId"
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "deploy": "requiredOnDeploy | fixedOnDeploy",
+            "kind": "any | bool | buttonVariant | color | currency | dataPartitionPeriod | dataPriority | date | dateTime | day | decimal | deviceSize | deviceType | direction | dividerKind | document | duration | email | fieldVariant | font | html | hyperlink | icon | image | imageCorner | language | location | mapPinShape | mobileNumber | number | paragraph | ratingKind | stroke | symbol | text | themePlacement | time | timeZone | month | quarter | calendar | condition | function | mapping | scheduler | sequence | userSetting | mapOfText | chipSetDay | setOfNumber | setOfText | chipSetTime | tree",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "pluginMap": {
+        "keys": [
+          "MetaIdPlugin"
+        ],
+        "map": {
+          "MetaIdPlugin": {
+            "pluginBundleId": "PluginBundleId",
+            "pluginId": "PluginId",
+            "pluginName": "string",
+            "pluginAvatarId?": "MediaIdAvatar",
+            "pluginVersion": "string",
+            "pluginResourceMap?": {
+              "jar?": {
+                "pluginConfigFormId?": "MetaIdForm",
+                "packageNameVar?": "string",
+                "uploadJarMap?": {
+                  "keys": [
+                    "MediaIdJar"
+                  ],
+                  "map": {
+                    "MediaIdJar": {
+                      "metaId": "MediaIdJar",
+                      "md5": "string",
+                      "fileName": "string",
+                      "storeVersionId?": "StoreVersionId"
+                    }
+                  },
+                  "storeVersionId?": "StoreVersionId"
+                }
+              },
+              "rpc?": {
+                "pluginConfigFormId?": "MetaIdForm"
+              },
+              "dev?": {
+                "pluginConfigFormId?": "MetaIdForm",
+                "packageNameVar?": "string"
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "pluginAbout?": "string",
+            "pluginApiIdKeys": [
+              "PluginApiId"
+            ],
+            "pluginApiIdMap": {
+              "PluginApiId": {
+                "pluginApiId": "PluginApiId",
+                "name": "Symbol",
+                "apiType": "delete | get | patch | post | put | webhook",
+                "inputFormId?": "MetaIdForm",
+                "outputFormId?": "MetaIdForm",
+                "guaranteedInvocation?": "boolean"
+              }
+            },
+            "pluginFormKeys": [
+              "MetaIdForm"
+            ],
+            "pluginFormMap": {
+              "MetaIdForm": {
+                "metaId": "MetaIdForm",
+                "name": "Symbol",
+                "label?": "string",
+                "chatLabelFieldId?": "MetaIdField",
+                "textPatternVar?": {
+                  "value?": [
+                    "string"
+                  ]
+                },
+                "chatPatternVar?": {
+                  "value?": [
+                    "string"
+                  ]
+                },
+                "compMap": {
+                  "MetaIdComp": {
+                    "name": "Symbol",
+                    "type": "bool | date | decimal | logDecimal | image | label | number | logNumber | paragraph | text | enumAdminDoNotOptionEnt | enumAdminDoNotOptionPlugin | enumAudioFormat | enumAutomationSource | enumCaptureValueKind | enumCodeEditorLanguage | enumConditionOperator | enumConjunction | enumDataPartitionPeriod | enumDate | enumDay | enumDeeplinkConstraints | enumDeployVar | enumDeviceSize | enumDeviceType | enumDocFileExt | enumDriveSheet | enumDriveStatus | enumDurationUnit | enumEntLockBehavior | enumEntLockReason | enumFields | enumFuncArgs | enumMapPinShape | enumPaymentMethod | enumPaymentPlan | enumPermission | enumPluginApiMethod | enumPluginResources | enumPluginSecurityAccess | enumPriority | enumPromptAction | enumRoles | enumRowAuditTrail | enumSetupKind | enumUserSettingOptions | enumUserSettingValue | enumVideoFormat | enumVisibilityOperator | enumXYChart | enumMonth | enumQuarter | enumDeeplinkExpiry | enumForms | enumLogOperationKind | enumCodeType | enumPosition | enumDateOccurrence | enumFrequencyKind | enumRenderingKind | enumInsertVariant | enumUpdateVariant | enumRemoveVariant | enumEmptyFieldVariant | enumTableLayoutStyle | enumUserProperty | enumSyntheticValueKind | enumArgBinderContext | enumArgBinder | enumKindAction | enumKindAutomation | enumKindButton | enumKindDeeplink | enumKindFormComposite | enumKindHyperlink | enumKindImport | enumKindRating | enumKindReport | enumKindScheduledEvent | enumKindScheduledStep | enumKindSpreadsheetEvent | enumKindSpreadsheetStep | enumKindWebhookEvent | enumKindWebhookStep | enumKindTranslation | enumTerminateSetting | enumLayoutCardFilterKind | enumLayoutGridKind | enumLayoutSpreadsheetKind | enumThemeButtonSize | enumThemeButtonVariant | enumThemeColor | enumThemeColorShade | enumThemeDirection | enumThemeDividerThickness | enumThemeFieldMargin | enumThemeFieldSize | enumThemeFieldVariant | enumThemeFormVariant | enumThemeImageCorner | enumThemePickVariant | enumThemePickMultiVariant | enumThemePlacement | enumThemeSectionVariant | enumThemeStroke | enumThemeTabVariant | enumVisibilityAction | currency | icon | language | timeZone | pinShape | lineStroke | month | quarter | font | chipSet | chipSetDate | chipSetDateTime | chipSetDay | chipSetDeviceSize | chipSetDeviceType | setOfLanguageKeys | chipSetTime | pickText | pickTree | pickUser | pickGridRow | setOfUser | setOfText | color | hyperlink | audio | camera | counter | logCounter | dateRange | dateTime | dateTimeRange | duration | email | handle | location | mobileNumber | rating | signature | slider | time | video | voice | rowId | symbol | button | divider | document | error | html | identifier | info | propertyMap | ref | scanCode | showCode | timer | userId | synthetic | grid | section | tab | studioVarIdTextEditor | studioVarIdParagraphEditor | studioCodeEditor | pickActionId | pickCompId | pickPluginCompId | pickFieldId | pickPluginFieldId | pickFormId | pickPluginFormId | pickGridId | pickImportPluginId | pickImportPluginApiId | pickLayoutFormContentId | pickLayoutGridId | pickLayoutSpreadsheetId | pickPluginBundleId | pickPluginId | pickReportId | pickRoleId | pickSectionId | pickSpreadsheetId | pickVarId | pickGroupId | studioBuildAllFilterTag | studioBuildArgBinder | studioBuildCalendar | studioBuildColor | studioBuildDate | studioBuildDateTime | studioBuildPermissionMatrix | studioBuildTree | studioBuildUserSetting | studioBuildActionPermission | studioBuildPropertyMap | studioMapOfForwardRolePermission | studioMapOfCondition | studioMapOfFormula | studioMapOfFuncArg | studioMapOfJarFile | studioMapOfLayoutSpreadsheet | studioMapOfLayoutGrid | studioMapOfMapping | studioMapOfText | studioMapOfVisibilityCondition | studioMapOfVisibilityAction | studioMapOfPartition | studioMapOfForwardGroupPermission | studioSetOfDocFileExt | studioSetOfStoreItemCategory | studioSetOfFilterTag | studioSetOfNumber | studioSetOfAdminDoNotOption | studioSetOfPluginSecurityAccess | studioSetOfRowAuditTrail | studioSetOfMonth | studioSetOfBorder | studioSetOfActionId | studioSetOfFieldId | studioSetOfFieldRefId | studioSetOfFormId | studioSetOfGridId | studioSetOfGroupId | studioSetOfLayoutFormContentId | studioSetOfLayoutGridId | studioSetOfLayoutSpreadsheetId | studioSetOfReportId | studioSetOfRoleId | studioSetOfSectionId | studioSetOfSpreadsheetId | studioSetOfVarId | studioCompArray | avtar | password",
+                    "disabled?": "boolean",
+                    "permissionMatrix?": {
+                      "defaultPermission?": "invisible | read | writeOnce | write",
+                      "keys?": [
+                        "MetaIdRole"
+                      ],
+                      "map?": {
+                        "MetaIdRole": "invisible | read | writeOnce | write"
+                      }
+                    },
+                    "label?": "string",
+                    "pl?": "number",
+                    "pr?": "number",
+                    "pt?": "number",
+                    "pb?": "number",
+                    "hidden?": "boolean"
+                  }
+                },
+                "displayCompositeId": "MetaIdComposite",
+                "permissionMatrix?": {},
+                "theme?": {
+                  "fieldVariant?": "outlined | filled | standard",
+                  "fieldMargin?": "dense | none | normal",
+                  "fieldSize?": "medium | small",
+                  "buttonSize?": "small | medium | large",
+                  "buttonVariant?": "text | contained | outlined | icon",
+                  "formVariant?": "form | report",
+                  "colSpacing?": "number",
+                  "rowSpacing?": "number"
+                },
+                "layout?": {
+                  "commonHeader": {
+                    "showEnterprise?": "boolean",
+                    "foregroundColorVar?": {
+                      "value?": "transparent | primary | secondary | error | info | success | warning | textPrimary | textSecondary | textDisabled | textInverse | primaryLight | secondaryLight | successLight | errorLight | infoLight | warningLight | primaryDark | secondaryDark | successDark | errorDark | infoDark | warningDark | amber | black | blue | cyan | deepOrange | deepPurple | green | grey | indigo | lightBlue | lightGreen | lime | orange | pink | purple | red | teal | white | yellow",
+                      "shade?": "s50 | s100 | s200 | s500"
+                    },
+                    "backgroundColorVar?": {},
+                    "hyperlinkKeys?": [
+                      "MetaIdHyperlink"
+                    ],
+                    "hyperLinkMap?": {
+                      "MetaIdHyperlink": {
+                        "metaId": "MetaIdHyperlink",
+                        "value?": "string",
+                        "displayText?": "string",
+                        "colorVar?": {},
+                        "kind?": "general | youtube"
+                      }
+                    },
+                    "formNamePatternVar?": {},
+                    "formNameFontVar?": "body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4",
+                    "formNamePositionVar?": "top | bottom | start | end | center | diagonal | overlayTop | flexCenter | spaceBetween | justify",
+                    "formNameOpacityVar?": "number",
+                    "showSeparator?": "boolean"
+                  },
+                  "contentMap": {
+                    "keys": [
+                      "MetaIdLayoutFormContent"
+                    ],
+                    "map": {
+                      "MetaIdLayoutFormContent": {
+                        "metaId": "MetaIdLayoutFormContent",
+                        "name": "Symbol",
+                        "labelVar?": {},
+                        "direction?": "horizontal | vertical",
+                        "displayLabelVar?": {},
+                        "allowToSwitchLayoutIdSet?": [
+                          "MetaIdLayoutFormContent"
+                        ],
+                        "showBorderSet?": [
+                          "top | bottom | left | right"
+                        ],
+                        "renderingMode?": "a4Size | fullScreen",
+                        "contentPadding?": "thick | thin",
+                        "start?": {
+                          "fieldIdSet?": [
+                            "MetaIdField"
+                          ],
+                          "gridLayoutIdSet?": [
+                            "MetaIdLayoutGrid"
+                          ],
+                          "contentLayoutIdSet?": [
+                            "MetaIdLayoutFormContent"
+                          ],
+                          "showGridSwitcher?": [
+                            "MetaIdGrid"
+                          ],
+                          "showBorderSet?": [
+                            "top | bottom | left | right"
+                          ],
+                          "showPaddingSet?": [
+                            "top | bottom | left | right"
+                          ],
+                          "padding?": "thick | thin"
+                        },
+                        "flexCenter?": {},
+                        "end?": {},
+                        "showPaddingSet?": [
+                          "top | bottom | left | right"
+                        ]
+                      }
+                    },
+                    "defaultLayoutFormContentId?": "MetaIdLayoutFormContent"
+                  },
+                  "commonFooter": {
+                    "showSeparator?": "boolean",
+                    "foregroundColorVar?": {},
+                    "backgroundColorVar?": {},
+                    "first?": {
+                      "first?": {
+                        "textPatternVar?": {},
+                        "textFontVar?": "body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4",
+                        "textOpacityVar?": "number"
+                      },
+                      "second?": {},
+                      "third?": {}
+                    },
+                    "second?": {},
+                    "third?": {}
+                  },
+                  "commonWatermark": {
+                    "textPatternVar?": {},
+                    "textFontVar?": "body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4",
+                    "textPositionVar?": "top | bottom | start | end | center | diagonal | overlayTop | flexCenter | spaceBetween | justify",
+                    "textOpacityVar?": "number"
+                  }
+                },
+                "visibilityRuleMap?": {
+                  "keys": [
+                    "MetaIdVisibilityRule"
+                  ],
+                  "map": {
+                    "MetaIdVisibilityRule": {
+                      "metaId": "MetaIdVisibilityRule",
+                      "conditionMap": {
+                        "conjunction": "or | and",
+                        "keys": [
+                          "MetaIdVisibilityCondition"
+                        ],
+                        "map": {
+                          "MetaIdVisibilityCondition": {
+                            "metaId": "MetaIdVisibilityCondition",
+                            "lhs": "MetaIdField",
+                            "visibilityOperator": "hasNoValue | hasValue | equalTo | notEqualTo",
+                            "rhs?": {
+                              "valueText?": "string",
+                              "valueBoolean?": "boolean",
+                              "valueDate?": "string",
+                              "valueLong?": "number",
+                              "valueDouble?": "number",
+                              "valueFieldId?": "MetaIdField",
+                              "valueSysId?": "SysId",
+                              "valueSysIdSet?": [
+                                "SysId"
+                              ],
+                              "valueSymbolColumn?": {
+                                "symbol?": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "actionMap": {
+                        "keys": [
+                          "MetaIdVisibilityAction"
+                        ],
+                        "map": {
+                          "MetaIdVisibilityAction": {
+                            "metaId": "MetaIdVisibilityAction",
+                            "compId": "MetaIdComp",
+                            "visibilityAction": "blink | click | disable | enable | hidden | highlight | invisible | shake | visible"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "chatBubbleFieldIdSet?": [
+                  "MetaIdField"
+                ],
+                "formulaFieldIdSet?": [
+                  "MetaIdField"
+                ],
+                "gridLookupMap?": {
+                  "MetaIdLayoutGrid": "MetaIdGrid"
+                },
+                "actionPermissionMap?": {
+                  "keys": [
+                    "MetaIdAction"
+                  ],
+                  "map": {
+                    "MetaIdAction": {
+                      "metaId": "MetaIdAction",
+                      "roleIdSet": [
+                        "MetaIdRole"
+                      ],
+                      "menuGroup?": "string",
+                      "deviceSizeSet?": [
+                        "mobile | tablet | laptop | desktop"
+                      ]
+                    }
+                  },
+                  "metaId": "MetaIdField",
+                  "name": "Symbol",
+                  "type": "bool | date | decimal | logDecimal | image | label | number | logNumber | paragraph | text | enumAdminDoNotOptionEnt | enumAdminDoNotOptionPlugin | enumAudioFormat | enumAutomationSource | enumCaptureValueKind | enumCodeEditorLanguage | enumConditionOperator | enumConjunction | enumDataPartitionPeriod | enumDate | enumDay | enumDeeplinkConstraints | enumDeployVar | enumDeviceSize | enumDeviceType | enumDocFileExt | enumDriveSheet | enumDriveStatus | enumDurationUnit | enumEntLockBehavior | enumEntLockReason | enumFields | enumFuncArgs | enumMapPinShape | enumPaymentMethod | enumPaymentPlan | enumPermission | enumPluginApiMethod | enumPluginResources | enumPluginSecurityAccess | enumPriority | enumPromptAction | enumRoles | enumRowAuditTrail | enumSetupKind | enumUserSettingOptions | enumUserSettingValue | enumVideoFormat | enumVisibilityOperator | enumXYChart | enumMonth | enumQuarter | enumDeeplinkExpiry | enumForms | enumLogOperationKind | enumCodeType | enumPosition | enumDateOccurrence | enumFrequencyKind | enumRenderingKind | enumInsertVariant | enumUpdateVariant | enumRemoveVariant | enumEmptyFieldVariant | enumTableLayoutStyle | enumUserProperty | enumSyntheticValueKind | enumArgBinderContext | enumArgBinder | enumKindAction | enumKindAutomation | enumKindButton | enumKindDeeplink | enumKindFormComposite | enumKindHyperlink | enumKindImport | enumKindRating | enumKindReport | enumKindScheduledEvent | enumKindScheduledStep | enumKindSpreadsheetEvent | enumKindSpreadsheetStep | enumKindWebhookEvent | enumKindWebhookStep | enumKindTranslation | enumTerminateSetting | enumLayoutCardFilterKind | enumLayoutGridKind | enumLayoutSpreadsheetKind | enumThemeButtonSize | enumThemeButtonVariant | enumThemeColor | enumThemeColorShade | enumThemeDirection | enumThemeDividerThickness | enumThemeFieldMargin | enumThemeFieldSize | enumThemeFieldVariant | enumThemeFormVariant | enumThemeImageCorner | enumThemePickVariant | enumThemePickMultiVariant | enumThemePlacement | enumThemeSectionVariant | enumThemeStroke | enumThemeTabVariant | enumVisibilityAction | currency | icon | language | timeZone | pinShape | lineStroke | month | quarter | font | chipSet | chipSetDate | chipSetDateTime | chipSetDay | chipSetDeviceSize | chipSetDeviceType | setOfLanguageKeys | chipSetTime | pickText | pickTree | pickUser | pickGridRow | setOfUser | setOfText | color | hyperlink | audio | camera | counter | logCounter | dateRange | dateTime | dateTimeRange | duration | email | handle | location | mobileNumber | rating | signature | slider | time | video | voice | rowId | symbol | button | divider | document | error | html | identifier | info | propertyMap | ref | scanCode | showCode | timer | userId | synthetic | grid | section | tab | studioVarIdTextEditor | studioVarIdParagraphEditor | studioCodeEditor | pickActionId | pickCompId | pickPluginCompId | pickFieldId | pickPluginFieldId | pickFormId | pickPluginFormId | pickGridId | pickImportPluginId | pickImportPluginApiId | pickLayoutFormContentId | pickLayoutGridId | pickLayoutSpreadsheetId | pickPluginBundleId | pickPluginId | pickReportId | pickRoleId | pickSectionId | pickSpreadsheetId | pickVarId | pickGroupId | studioBuildAllFilterTag | studioBuildArgBinder | studioBuildCalendar | studioBuildColor | studioBuildDate | studioBuildDateTime | studioBuildPermissionMatrix | studioBuildTree | studioBuildUserSetting | studioBuildActionPermission | studioBuildPropertyMap | studioMapOfForwardRolePermission | studioMapOfCondition | studioMapOfFormula | studioMapOfFuncArg | studioMapOfJarFile | studioMapOfLayoutSpreadsheet | studioMapOfLayoutGrid | studioMapOfMapping | studioMapOfText | studioMapOfVisibilityCondition | studioMapOfVisibilityAction | studioMapOfPartition | studioMapOfForwardGroupPermission | studioSetOfDocFileExt | studioSetOfStoreItemCategory | studioSetOfFilterTag | studioSetOfNumber | studioSetOfAdminDoNotOption | studioSetOfPluginSecurityAccess | studioSetOfRowAuditTrail | studioSetOfMonth | studioSetOfBorder | studioSetOfActionId | studioSetOfFieldId | studioSetOfFieldRefId | studioSetOfFormId | studioSetOfGridId | studioSetOfGroupId | studioSetOfLayoutFormContentId | studioSetOfLayoutGridId | studioSetOfLayoutSpreadsheetId | studioSetOfReportId | studioSetOfRoleId | studioSetOfSectionId | studioSetOfSpreadsheetId | studioSetOfVarId | studioCompArray | avtar | password",
+                  "disabled?": "boolean",
+                  "permissionMatrix?": {},
+                  "label?": "string",
+                  "pl?": "number",
+                  "pr?": "number",
+                  "pt?": "number",
+                  "pb?": "number",
+                  "hidden?": "boolean"
+                },
+                "allowToPrintForm?": "boolean",
+                "configForm?": "boolean"
+              }
+            },
+            "singleton?": "boolean",
+            "metaId": "MetaIdPlugin",
+            "filterTags?": {},
+            "description?": "string",
+            "kind?": "plugin",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "roleMap": {
+        "keys": [
+          "MetaIdRole"
+        ],
+        "map": {
+          "MetaIdRole": {
+            "metaId": "MetaIdRole",
+            "details": {},
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "formMap": {
+        "keys": [
+          "MetaIdForm"
+        ],
+        "map": {
+          "MetaIdForm": {
+            "metaId": "MetaIdForm",
+            "details": {},
+            "compositeMap": {
+              "keys": [
+                "MetaIdComposite"
+              ],
+              "map": {
+                "MetaIdComposite": {
+                  "fieldMap": {
+                    "keys": [
+                      "MetaIdField"
+                    ],
+                    "map": {
+                      "MetaIdField": {
+                        "metaId": "MetaIdField",
+                        "details": {},
+                        "disabled?": "boolean",
+                        "permissionMatrix?": {
+                          "defaultPermission?": "invisible | read | writeOnce | write",
+                          "keys": [
+                            "MetaIdRole"
+                          ],
+                          "map": {
+                            "MetaIdRole": "invisible | read | writeOnce | write"
+                          },
+                          "storeVersionId?": "StoreVersionId"
+                        },
+                        "type?": "bool | date | decimal | logDecimal | image | label | number | logNumber | paragraph | text | chipSet | chipSetDate | chipSetDateTime | chipSetDay | chipSetDeviceSize | chipSetDeviceType | setOfLanguageKeys | chipSetTime | currency | icon | language | timeZone | pinShape | lineStroke | month | quarter | font | pickText | pickTree | pickUser | pickGridRow | setOfUser | setOfText | color | hyperlink | audio | camera | counter | logCounter | dateRange | dateTime | dateTimeRange | duration | email | handle | location | mobileNumber | rating | signature | slider | time | video | voice | rowId | symbol | button | divider | document | error | html | identifier | info | propertyMap | ref | scanCode | showCode | timer | userId | synthetic | grid | section",
+                        "storeVersionId?": "StoreVersionId"
+                      }
+                    },
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "actionPermissionMap?": {
+                    "keys": [
+                      "MetaIdAction"
+                    ],
+                    "map": {
+                      "MetaIdAction": {
+                        "metaId": "MetaIdAction",
+                        "roleIdSet": [
+                          "MetaIdRole"
+                        ],
+                        "menuGroup?": "string",
+                        "deviceSizeSet?": [
+                          "mobile | tablet | laptop | desktop"
+                        ],
+                        "storeVersionId?": "StoreVersionId"
+                      }
+                    },
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "details": {},
+                  "disabled?": "boolean",
+                  "permissionMatrix?": {},
+                  "type?": "bool | date | decimal | logDecimal | image | label | number | logNumber | paragraph | text | chipSet | chipSetDate | chipSetDateTime | chipSetDay | chipSetDeviceSize | chipSetDeviceType | setOfLanguageKeys | chipSetTime | currency | icon | language | timeZone | pinShape | lineStroke | month | quarter | font | pickText | pickTree | pickUser | pickGridRow | setOfUser | setOfText | color | hyperlink | audio | camera | counter | logCounter | dateRange | dateTime | dateTimeRange | duration | email | handle | location | mobileNumber | rating | signature | slider | time | video | voice | rowId | symbol | button | divider | document | error | html | identifier | info | propertyMap | ref | scanCode | showCode | timer | userId | synthetic | grid | section",
+                  "storeVersionId?": "StoreVersionId"
+                }
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "formulaMap": {
+              "keys?": [
+                "MetaIdFormula"
+              ],
+              "map": {
+                "MetaIdFormula": {
+                  "metaId": "MetaIdFormula",
+                  "conditionVarId?": "MetaIdVar",
+                  "assignFormulaFieldId": "MetaIdField",
+                  "formula?": {
+                    "metaId": "MetaIdCode",
+                    "value?": "string",
+                    "compiledValue?": {
+                      "value?": "string",
+                      "argBinderMap?": {
+                        "keys": [
+                          "string"
+                        ],
+                        "map": {
+                          "string": {
+                            "argName": "string",
+                            "kind": "argument | context | derived | field | input | output | spreadsheet | variable",
+                            "value?": {
+                              "storeVersionId?": "StoreVersionId"
+                            },
+                            "storeVersionId?": "StoreVersionId"
+                          }
+                        },
+                        "storeVersionId?": "StoreVersionId"
+                      },
+                      "storeVersionId?": "StoreVersionId"
+                    },
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "storeVersionId?": "StoreVersionId"
+                }
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "permissionMatrix?": {},
+            "layoutForm": {
+              "commonHeader": {
+                "showEnterprise?": "boolean",
+                "foregroundColorVarId?": "MetaIdVar",
+                "backgroundColorVarId?": "MetaIdVar",
+                "hyperlinkVarIdSet?": [
+                  "MetaIdVar"
+                ],
+                "formNamePatternVarId?": {
+                  "argVarId": "MetaIdVar",
+                  "argBinderMap?": {},
+                  "storeVersionId?": "StoreVersionId"
+                },
+                "formNameFontVarId?": "MetaIdVar",
+                "formNamePositionVarId?": "MetaIdVar",
+                "formNameOpacityVarId?": "MetaIdVar",
+                "showSeparator?": "boolean",
+                "storeVersionId?": "StoreVersionId"
+              },
+              "contentMap": {
+                "keys": [
+                  "MetaIdLayoutFormContent"
+                ],
+                "map": {
+                  "MetaIdLayoutFormContent": {
+                    "metaId": "MetaIdLayoutFormContent",
+                    "name": "Symbol",
+                    "description?": "string",
+                    "labelVarId?": {},
+                    "direction?": "horizontal | vertical",
+                    "displayLabelVarId?": {},
+                    "allowToSwitchLayoutIdSet?": [
+                      "MetaIdLayoutFormContent"
+                    ],
+                    "showBorderSet?": [
+                      "top | bottom | left | right"
+                    ],
+                    "renderingMode?": "a4Size | fullScreen",
+                    "contentPadding?": "thick | thin",
+                    "start?": {
+                      "fieldIdSet?": [
+                        "MetaIdField"
+                      ],
+                      "gridLayoutIdSet?": [
+                        "MetaIdLayoutGrid"
+                      ],
+                      "contentLayoutIdSet?": [
+                        "MetaIdLayoutFormContent"
+                      ],
+                      "gridSwitcherSet?": [
+                        "MetaIdGrid"
+                      ],
+                      "showBorderSet?": [
+                        "top | bottom | left | right"
+                      ],
+                      "showPaddingSet?": [
+                        "top | bottom | left | right"
+                      ],
+                      "padding?": "thick | thin",
+                      "storeVersionId?": "StoreVersionId"
+                    },
+                    "flexCenter?": {},
+                    "end?": {},
+                    "showPaddingSet?": [
+                      "top | bottom | left | right"
+                    ],
+                    "storeVersionId?": "StoreVersionId"
+                  }
+                },
+                "defaultLayoutFormContentId?": "MetaIdLayoutFormContent",
+                "storeVersionId?": "StoreVersionId"
+              },
+              "commonFooter": {
+                "showSeparator?": "boolean",
+                "foregroundColorVarId?": "MetaIdVar",
+                "backgroundColorVarId?": "MetaIdVar",
+                "first?": {
+                  "first?": {
+                    "textPatternVarId?": {},
+                    "textFontVarId?": "MetaIdVar",
+                    "textOpacityVarId?": "MetaIdVar",
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "second?": {},
+                  "third?": {},
+                  "storeVersionId?": "StoreVersionId"
+                },
+                "second?": {},
+                "third?": {},
+                "storeVersionId?": "StoreVersionId"
+              },
+              "commonWatermark": {
+                "textPatternVarId?": {},
+                "textFontVarId?": "MetaIdVar",
+                "textPositionVarId?": "MetaIdVar",
+                "textOpacityVarId?": "MetaIdVar",
+                "storeVersionId?": "StoreVersionId"
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "visibilityRuleMap": {
+              "keys": [
+                "MetaIdVisibilityRule"
+              ],
+              "map": {
+                "MetaIdVisibilityRule": {
+                  "metaId": "MetaIdVisibilityRule",
+                  "name": "Symbol",
+                  "description?": "string",
+                  "conditionMap": {
+                    "conjunction": "or | and",
+                    "keys": [
+                      "MetaIdVisibilityCondition"
+                    ],
+                    "map": {
+                      "MetaIdVisibilityCondition": {
+                        "metaId": "MetaIdVisibilityCondition",
+                        "name": "Symbol",
+                        "lhs": "MetaIdField",
+                        "visibilityOperator": "hasNoValue | hasValue | equalTo | notEqualTo",
+                        "rhs?": {},
+                        "storeVersionId?": "StoreVersionId"
+                      }
+                    },
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "actionMap": {
+                    "keys": [
+                      "MetaIdVisibilityAction"
+                    ],
+                    "map": {
+                      "MetaIdVisibilityAction": {
+                        "metaId": "MetaIdVisibilityAction",
+                        "name": "Symbol",
+                        "compId": "MetaIdComp",
+                        "visibilityAction": "blink | click | disable | enable | hidden | highlight | invisible | shake | visible",
+                        "storeVersionId?": "StoreVersionId"
+                      }
+                    },
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "storeVersionId?": "StoreVersionId"
+                }
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "chatLabelFieldId?": "MetaIdField",
+            "textPatternVarId?": {},
+            "chatPatternVarId?": {
+              "argVarId": "MetaIdVar",
+              "argBinderMap?": {},
+              "storeVersionId?": "StoreVersionId"
+            },
+            "tabVariant?": "standard | scrollable | fullWidth",
+            "chatBubbleFieldIdSet?": [
+              "MetaIdField"
+            ],
+            "commentRoleSet?": [
+              "MetaIdRole"
+            ],
+            "actionPermissionMap?": {},
+            "allowToPrintForm?": "boolean",
+            "configForm?": "boolean",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "spreadsheetMap": {
+        "keys": [
+          "MetaIdSpreadsheet"
+        ],
+        "map": {
+          "MetaIdSpreadsheet": {
+            "metaId": "MetaIdSpreadsheet",
+            "details": {},
+            "formId": "MetaIdForm",
+            "searchableIdSet?": [
+              "MetaIdField"
+            ],
+            "queryableIdSet?": [
+              "MetaIdField"
+            ],
+            "layoutSpreadsheetMap?": {
+              "keys": [
+                "MetaIdLayoutSpreadsheet"
+              ],
+              "map": {
+                "MetaIdLayoutSpreadsheet": {
+                  "metaId": "MetaIdLayoutSpreadsheet",
+                  "name": "Symbol",
+                  "label?": "string",
+                  "description?": "string",
+                  "toolTipFieldId?": "MetaIdField",
+                  "bkgColorFieldId?": "MetaIdField",
+                  "allowToSwitchLayoutIdSet?": [
+                    "MetaIdLayoutSpreadsheet"
+                  ],
+                  "kind": "card | kanban | list | table",
+                  "card?": {
+                    "groupByFieldId?": "MetaIdField",
+                    "filter?": {
+                      "kind?": "tree | tab",
+                      "showSearchBar?": "boolean",
+                      "categoryFieldIdSet?": [
+                        "MetaIdField"
+                      ],
+                      "advanceFilterFieldIdSet?": [
+                        "MetaIdField"
+                      ],
+                      "sortByFieldIdSet?": [
+                        "MetaIdField"
+                      ],
+                      "storeVersionId?": "StoreVersionId"
+                    },
+                    "item?": {
+                      "mediaFieldIdSet?": [
+                        "MetaIdField"
+                      ],
+                      "mediaVarIdSet?": [
+                        "MetaIdVar"
+                      ],
+                      "imageCornerVarId?": "MetaIdVar",
+                      "firstLine?": {
+                        "first?": {
+                          "lineFieldIdSet?": [
+                            "MetaIdField"
+                          ],
+                          "lineVarId?": {},
+                          "colorFieldId?": "MetaIdField",
+                          "colorVarId?": "MetaIdVar",
+                          "fontFieldId?": "MetaIdField",
+                          "fontVarId?": "MetaIdVar",
+                          "showLabels?": "boolean",
+                          "storeVersionId?": "StoreVersionId"
+                        },
+                        "middle?": {},
+                        "caption?": {},
+                        "storeVersionId?": "StoreVersionId"
+                      },
+                      "secondLine?": {},
+                      "thirdLine?": {},
+                      "fourthLine?": {},
+                      "fifthLine?": {},
+                      "storeVersionId?": "StoreVersionId"
+                    },
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "list?": {},
+                  "table?": {
+                    "showFieldIdSet?": [
+                      "MetaIdField"
+                    ],
+                    "showCommentCount?": "boolean",
+                    "pagination?": "boolean",
+                    "rowsPerPage?": "number",
+                    "masterDetailGridIdSet?": [
+                      "MetaIdGrid"
+                    ],
+                    "hideRowSeparator?": "boolean",
+                    "columnSizeSet?": [
+                      "string"
+                    ],
+                    "sortByFieldIdSet?": [
+                      "MetaIdField"
+                    ],
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "kanban?": {
+                    "showFieldIdSet?": [
+                      "MetaIdField"
+                    ],
+                    "showCommentCount?": "boolean",
+                    "kanbanFieldId?": "MetaIdField",
+                    "swimlaneMap?": {
+                      "keys?": [
+                        "MetaIdSwimlane"
+                      ],
+                      "map": {
+                        "MetaIdSwimlane": {
+                          "metaId": "MetaIdSwimlane",
+                          "valueOptionId?": "string",
+                          "label?": "string",
+                          "colorVarId?": "MetaIdVar",
+                          "storeVersionId?": "StoreVersionId"
+                        }
+                      },
+                      "storeVersionId?": "StoreVersionId"
+                    },
+                    "sortByFieldIdSet?": [
+                      "MetaIdField"
+                    ],
+                    "showSectionName?": "boolean",
+                    "showFooter?": "boolean",
+                    "fontSize?": "body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4",
+                    "storeVersionId?": "StoreVersionId"
+                  },
+                  "storeVersionId?": "StoreVersionId"
+                }
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "readRoleSet?": [
+              "MetaIdRole"
+            ],
+            "insertRoleSet?": [
+              "MetaIdRole"
+            ],
+            "updateRoleSet?": [
+              "MetaIdRole"
+            ],
+            "removeRoleSet?": [
+              "MetaIdRole"
+            ],
+            "bypassDurationRoleSet?": [
+              "MetaIdRole"
+            ],
+            "auditTrailFormRoleSet?": [
+              "MetaIdRole"
+            ],
+            "userForwardRolePermissionMap?": {
+              "keys": [
+                "MetaIdRole"
+              ],
+              "map": {
+                "MetaIdRole": {
+                  "valueSet": [
+                    "MetaId"
+                  ],
+                  "storeVersionId?": "StoreVersionId"
+                }
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "groupForwardRolePermissionMap?": {},
+            "partitionMap?": {
+              "keys?": [
+                "MetaIdPartition"
+              ],
+              "map": {
+                "MetaIdPartition": {
+                  "metaId": "MetaIdPartition",
+                  "name": "Symbol",
+                  "assignPartitionFieldId": "MetaIdField",
+                  "formula": {},
+                  "storeVersionId?": "StoreVersionId"
+                }
+              },
+              "storeVersionId?": "StoreVersionId"
+            },
+            "readAfterDurationVarId?": "MetaIdVar",
+            "invisibleAfterDurationVarId?": "MetaIdVar",
+            "alias": "string",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "reportMap": {
+        "keys": [
+          "MetaIdReport"
+        ],
+        "map": {
+          "MetaIdReport": {
+            "metaId": "MetaIdReport",
+            "kind": "composite | mapper | plugin | query | spreadsheet",
+            "details": {},
+            "inputFormId?": "MetaIdForm",
+            "outputFormId?": "MetaIdForm",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "automationMap": {
+        "keys": [
+          "MetaIdAutomation"
+        ],
+        "map": {
+          "MetaIdAutomation": {
+            "metaId": "MetaIdAutomation",
+            "name": "Symbol",
+            "kind": "scheduled | spreadsheet | webhook",
+            "filterTags?": {},
+            "description?": "string",
+            "secondary?": "string",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "actionMap": {
+        "keys": [
+          "MetaIdAction"
+        ],
+        "map": {
+          "MetaIdAction": {
+            "metaId": "MetaIdAction",
+            "kind": "report | rowInsert | spreadsheetEditor | auditTrailSpreadsheet",
+            "details": {},
+            "icon?": "string",
+            "tooltip?": "string",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "promptMap": {
+        "keys": [
+          "MetaIdPrompt"
+        ],
+        "map": {
+          "MetaIdPrompt": {
+            "metaId": "MetaIdPrompt",
+            "filterTags?": {},
+            "name": "Symbol",
+            "action?": "MetaIdAction",
+            "promptText?": {},
+            "reviewBeforeExecuting?": "boolean"
+          }
+        }
+      },
+      "groupMap": {
+        "keys": [
+          "MetaIdGroup"
+        ],
+        "map": {
+          "MetaIdGroup": {
+            "metaId": "MetaIdGroup",
+            "details": {},
+            "chatPermissionSet?": [
+              "MetaIdRole"
+            ],
+            "groupPermissionSet?": [
+              "MetaIdRole"
+            ],
+            "actionPermissionMap": {},
+            "allowPromptAssistant?": "boolean",
+            "pinnedActionIdSet?": [
+              "MetaIdAction"
+            ],
+            "pinnedActionIdSetMobile?": [
+              "MetaIdAction"
+            ],
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "deeplinkMap": {
+        "keys": [
+          "MetaIdDeeplink"
+        ],
+        "map": {
+          "MetaIdDeeplink": {
+            "metaId": "MetaIdDeeplink",
+            "filterTags?": {},
+            "description?": "string",
+            "name": "Symbol",
+            "kind": "report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow",
+            "visibilityConstraint?": "enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing",
+            "creationRoles?": [
+              "MetaIdRole"
+            ],
+            "showHeader?": "boolean",
+            "showEnterprise?": "boolean",
+            "hyperlinkVarIdSet?": [
+              "MetaIdVar"
+            ],
+            "showSeparator?": "boolean",
+            "expiry?": "onFirstClick | withinOneWeek | withinOneMonth | noExpiry",
+            "passImageInDeeplink?": "boolean",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "allowFollowerInvitationLink?": "boolean",
+        "storeVersionId?": "StoreVersionId"
+      },
+      "driveSheetMap": {
+        "keys": [
+          "MetaIdDriveSheet"
+        ],
+        "map": {
+          "MetaIdDriveSheet": {
+            "metaId": "MetaIdDriveSheet",
+            "spreadsheetId": "MetaIdSpreadsheet",
+            "driveType": "master | partitioned",
+            "roleIdSet?": [
+              "MetaIdRole"
+            ],
+            "mediaRoleIdSet?": [
+              "MetaIdRole"
+            ],
+            "dataPartitionPeriodVarId?": "MetaIdVar",
+            "dataRetentionDurationVarId?": "MetaIdVar",
+            "dataUpdateDurationVarId?": "MetaIdVar",
+            "dataPriorityVarId?": "MetaIdVar",
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "driveSheetSettings?": {
+          "driveFolderName?": "Symbol",
+          "storeVersionId?": "StoreVersionId"
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "translationMap": {
+        "keys": [
+          "MetaIdTranslation"
+        ],
+        "map": {
+          "MetaIdTranslation": {
+            "metaId": "MetaIdTranslation",
+            "phrase?": "string",
+            "doNotShareWithPublicLibrary?": "boolean",
+            "type": "text | paragraph",
+            "translationMap?": {
+              "LanguageKey": "string"
+            },
+            "storeVersionId?": "StoreVersionId"
+          }
+        },
+        "usePublicLibrary?": "boolean",
+        "storeVersionId?": "StoreVersionId"
+      },
+      "deploy": {
+        "varMap": {
+          "keys": [
+            "MetaIdVar"
+          ],
+          "map": {
+            "MetaIdVar": {
+              "metaId": "MetaIdVar",
+              "kind": "any | bool | buttonVariant | color | currency | dataPartitionPeriod | dataPriority | date | dateTime | day | decimal | deviceSize | deviceType | direction | dividerKind | document | duration | email | fieldVariant | font | html | hyperlink | icon | image | imageCorner | language | location | mapPinShape | mobileNumber | number | paragraph | ratingKind | stroke | symbol | text | themePlacement | time | timeZone | month | quarter | calendar | condition | function | mapping | scheduler | sequence | userSetting | mapOfText | chipSetDay | setOfNumber | setOfText | chipSetTime | tree",
+              "varValue?": "Object",
+              "storeVersionId?": "StoreVersionId"
+            }
+          },
+          "storeVersionId?": "StoreVersionId"
+        },
+        "pluginMap": {
+          "keys": [
+            "MetaIdPlugin"
+          ],
+          "map": {
+            "MetaIdPlugin": {
+              "metaId": "MetaIdPlugin",
+              "pluginType?": "jar | rpc | dev",
+              "pluginConfigFormValueMap?": {
+                "MetaIdComp": "Object"
+              },
+              "storeVersionId?": "StoreVersionId"
+            }
+          },
+          "adminIdForSingletonPlugins?": "AdminId",
+          "storeVersionId?": "StoreVersionId"
+        },
+        "manage": {
+          "lockEnt?": "boolean",
+          "lockEntReason?": "blocked | obsolete | other | paymentNotReceived | tooMuchLoad | userUpgrade",
+          "lockEntBehavior?": "readAccess | zeroAccess | fullAccessWithWarning",
+          "storeVersionId?": "StoreVersionId"
+        },
+        "payment?": {
+          "communityMemId?": "string",
+          "currency?": "string",
+          "currentPlan?": "standard | advanced | enterprise",
+          "messagesPerSecond?": "number",
+          "maximumMessagesPerMonth?": "number",
+          "totalStorageGB?": "number",
+          "totalPricePerMonth?": "number",
+          "freeTrialDate?": "string",
+          "paymentMethod?": "creditCard | debitCard",
+          "paymentGatewayToken?": "string",
+          "storeVersionId?": "StoreVersionId"
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "trash?": {
+        "actionMap?": {
+          "MetaIdAction": {}
+        },
+        "fieldMap?": {
+          "MetaIdField": {}
+        },
+        "formMap?": {
+          "MetaIdForm": {}
+        },
+        "compositeMap?": {
+          "MetaIdComposite": {}
+        },
+        "spreadsheetMap?": {
+          "MetaIdSpreadsheet": {}
+        },
+        "varMap?": {
+          "MetaIdVar": {}
+        },
+        "reportMap?": {
+          "MetaIdReport": {}
+        },
+        "roleMap?": {
+          "MetaIdRole": {}
+        },
+        "groupMap?": {
+          "MetaIdGroup": {}
+        },
+        "filterTagMap?": {
+          "MetaIdFilterTag": "string"
+        }
+      },
+      "privateState?": {
+        "sheetIdMappingMap?": {
+          "MetaIdSpreadsheet": "SheetId"
+        },
+        "groupIdMappingMap?": {
+          "MetaIdGroup": "GroupId"
+        },
+        "schedulerTaskIdMappingMap?": {
+          "MetaIdAutomation": "SchedulerTaskId"
+        },
+        "cliSeedId?": "number",
+        "storeVersionId?": "StoreVersionId"
+      },
+      "storeVersionId?": "StoreVersionId"
+    },
+    "pluginBundle?": {
+      "draft?": {
+        "studioPlugin?": {
+          "version?": "string",
+          "metaId": "PluginId",
+          "creationTime?": "string",
+          "createdBy?": "AdminId",
+          "lastUpdateTime?": "string",
+          "lastUpdateBy?": "AdminId",
+          "details": {
+            "name": "string",
+            "about?": "string",
+            "storeAbout?": "string",
+            "avatarId?": "MediaIdAvatar",
+            "allFilterTags": {},
+            "storeLabelSet?": [
+              "AI | API | Access | Account | Adapter | Aerospace | Analytics | Apple | Application | Approval | Asia | Asset | Attendance | Australia | Automotive | BI | Backup | Banking | Bill | Brass | Buffer | Bug | Buyer | CPG | CPU | CRM | Call | Canada | Care | Career | Cart | Case | Center | Chatbot | Chemicals | China | City | Claim | Collaboration | Communication | Compliance | Connector | Construction | Content | Conversation | Copper | Customer | Data | Defense | Desk | Digital | Distribution | Document | Donor | EDI | EPM | ERP | Education | Elderly | Engagement | Enterprise | Estimate | Europe | Event | Execution | FMCG | Facebook | Factory | Fare | Federal | FieldOps | Financial | Food | Force | Forecast | France | Franchise | Gas | Germany | Goal | Gold | Google | Governance | Government | Gym | HCM | HR | HRA | Hardware | Health | Healthcare | Higher | Hospital | Hospitality | Hosting | Hub | Hubspot | IOT | ITSM | IaaS | Identity | Incident | India | Information | Insurance | Intel | Interview | Inventory | Issue | Jewellery | K387 | Lead | Leave | Leisure | Life | Loan | Local | Location | Logistics | Maintenance | Management | Manufacturing | Maps | Marketing | Master | Media | Meeting | Microsoft | Mobile | Municipality | NonProfit | Offline | Oil | Operations | Opportunity | Optimization | Oracle | Order | PLM | POS | PPM | PaaS | Payment | Payroll | Performance | Pharmaceuticals | Planning | Plastics | Platform | Plugin | Point | Portfolio | Privacy | Procurement | Product | Professional | Property | Public | Quality | Questionnaire | Quote | RPA | RealEstate | Receipts | Record | Recreation | Recruiting | Resource | Retail | Return | Revenue | Review | Risk | Robot | Routing | SAP | SCM | SPM | SaaS | Safety | Sales | SalesForce | Scheduling | School | Sciences | Security | Self | Service | ServiceNow | Shopping | Silver | Smart | Social | Software | Specialty | Spot | Spreadsheet | Stall | State | Store | Subscription | Supplier | Survey | System | TRM | Templates | Testing | Tiles | Time | Tracking | Transportation | USA | Utilities | Vendor | Virtual | Visibility | Warehouse | Web | WhatsApp | Workforce | Youth | Zen | Zendesk | eCommerce"
+            ],
+            "storeVersionId?": "StoreVersionId"
+          },
+          "deprecate?": "boolean",
+          "varMap": {},
+          "formMap": {},
+          "apiMap": {
+            "keys": [
+              "PluginApiId"
+            ],
+            "map": {
+              "PluginApiId": {
+                "metaId": "PluginApiId",
+                "name": "Symbol",
+                "description?": "string",
+                "creationDate": "string",
+                "filterTags?": {},
+                "apiType": "delete | get | patch | post | put | webhook",
+                "inputFormId?": "MetaIdForm",
+                "outputFormId?": "MetaIdForm",
+                "guaranteedInvocation?": "boolean",
+                "storeVersionId?": "StoreVersionId"
+              }
+            },
+            "storeVersionId?": "StoreVersionId"
+          },
+          "resourceMap": {
+            "rpc?": {
+              "pluginConfigFormId?": "MetaIdForm",
+              "lastUpdateTime": "string"
+            },
+            "jar?": {
+              "pluginConfigFormId?": "MetaIdForm",
+              "packageNameVarId?": "MetaIdVar",
+              "uploadJarMap?": {},
+              "lastUpdateTime": "string"
+            },
+            "dev?": {
+              "pluginConfigFormId?": "MetaIdForm",
+              "packageNameVarId?": "MetaIdVar",
+              "lastUpdateTime": "string"
+            },
+            "storeVersionId?": "StoreVersionId"
+          },
+          "deploy": {
+            "pluginVersion": "string",
+            "changes?": "string",
+            "storeVersionId?": "StoreVersionId"
+          },
+          "trash?": {},
+          "storeVersionId?": "StoreVersionId"
+        }
+      },
+      "pluginBundleId": "PluginBundleId",
+      "version": "string",
+      "creationTime": "string",
+      "createdBy": "AdminId",
+      "updateTime": "string",
+      "updateBy": "AdminId",
+      "deployMap?": {
+        "keys": [
+          "PluginId"
+        ],
+        "map": {
+          "PluginId": {}
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "storeVersionId?": "StoreVersionId"
+    },
+    "createdOn?": "string",
+    "createdBy?": "AdminId",
+    "updatedOn?": "string",
+    "updatedBy?": "AdminId"
+  }
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+
