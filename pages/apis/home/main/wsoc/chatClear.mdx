@@ -1,0 +1,34 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"DELETE"} /> chatClear
+
+## API Details
+
+- **Description** Delete messages for given chat retaining chats entry in recents
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` `wsoc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Publishes** `lastMessage` `messageClear` 
+- **Scope** globalOrEnt
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "chatId": "ChatId"
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+
