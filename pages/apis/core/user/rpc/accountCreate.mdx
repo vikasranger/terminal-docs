@@ -1,0 +1,39 @@
+# accountCreate
+
+## API Details
+
+- **Description** Start account creation workflow for new user
+- **Version** `v1`
+- **Method** `post`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** refreshOptional
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "deviceName": "string",
+  "deviceType": "android | ios | web | agent | test",
+  "firstName": "string",
+  "lastName": "string",
+  "newPassword": "string",
+  "handle": "string"
+}
+```
+
+### Signal format
+
+```json
+{
+  "verifyKey": "AnyKey",
+  "expiryMins": "number"
+}
+```
+

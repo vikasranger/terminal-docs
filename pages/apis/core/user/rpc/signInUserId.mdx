@@ -1,0 +1,44 @@
+# signInUserId
+
+## API Details
+
+- **Description** SignIn with user id. This method could be used by support if user loses all the handles. Support
+should first verify that the layoutHandle user lost is part of stale handles and give out user id to
+sign in. The user subsequently has to add a layoutHandle.
+- **Version** `v1`
+- **Method** `post`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** refreshOptional
+- **Publishes** `callerDeviceList` 
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "userId": "UserId",
+  "password": "string",
+  "deviceName": "string",
+  "deviceType": "android | ios | web | agent | test",
+  "rememberMe": "boolean"
+}
+```
+
+### Signal format
+
+```json
+{
+  "refreshToken": "string",
+  "callerId": "UserId",
+  "callerDeviceId": "DeviceId",
+  "clusterToken": "string",
+  "rememberMe": "boolean"
+}
+```
+

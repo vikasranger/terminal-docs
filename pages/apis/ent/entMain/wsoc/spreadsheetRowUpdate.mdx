@@ -1,0 +1,46 @@
+# spreadsheetRowUpdate
+
+## API Details
+
+- **Description** Updates a form message
+- **Version** `v1`
+- **Method** `post`
+- **Allowed Connection Types** `rpc` `wsoc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Publishes** `formResult` 
+- **Scope** ent
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "formId": "MetaIdForm",
+  "spreadsheetId": "MetaIdSpreadsheet",
+  "formValueRaw": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  },
+  "transactionId?": "string"
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+
