@@ -1,0 +1,34 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> otpVerify
+
+## API Details
+
+- **Description** Verify OTP and invoke callback function
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** none
+- **Flags** Log message
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "verifyKey": "AnyKey",
+  "otp": "AnyOtpValue"
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+

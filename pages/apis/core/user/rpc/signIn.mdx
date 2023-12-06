@@ -1,0 +1,43 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> signIn
+
+## API Details
+
+- **Description** SignIn user
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** refreshOptional
+- **Publishes** `callerDeviceList` 
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "password": "string",
+  "deviceName": "string",
+  "deviceType": "android | ios | web | agent | test",
+  "rememberMe": "boolean",
+  "handle": "string"
+}
+```
+
+### Signal format
+
+```json
+{
+  "refreshToken": "string",
+  "callerId": "UserId",
+  "callerDeviceId": "DeviceId",
+  "clusterToken": "string",
+  "rememberMe": "boolean"
+}
+```
+

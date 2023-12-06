@@ -1,0 +1,70 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"GET"} /> grantBearerToken
+
+## API Details
+
+- **Description** If refresh token sent transparently via Http cookie is valid, grant a bearer token
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** refresh
+- **Flags** Log message
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "tabId": "TabId",
+  "appVersion": "AppVersion",
+  "sendCaller?": "boolean"
+}
+```
+
+### Signal format
+
+```json
+{
+  "bearerToken": "string",
+  "caller?": {
+    "creationTime": "string",
+    "lastUpdate": "string",
+    "firstName": "string",
+    "lastName": "string",
+    "userId": "UserId",
+    "userIdHash": "string",
+    "handle?": "string",
+    "mediaIdAvatar?": "MediaIdAvatar",
+    "about?": "string",
+    "fromCache?": "boolean",
+    "entUserIdMap": {
+      "EntId": "EntUserId"
+    },
+    "entAdminIdMap": {
+      "EntId": "AdminId"
+    },
+    "pluginAdminIdMap": {
+      "PluginBundleId": "AdminId"
+    },
+    "storeItemAdminIdMap": {
+      "StoreItemId": "AdminId"
+    },
+    "groupIdSet": [
+      "GroupId"
+    ],
+    "googleMapApiKey?": "string",
+    "enterIsSendMobile?": "boolean",
+    "enterIsSendDesktop?": "boolean",
+    "allowStorePublish?": "boolean",
+    "version": "string"
+  },
+  "updateRefreshToken": "boolean"
+}
+```
+
