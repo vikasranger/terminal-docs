@@ -1,0 +1,171 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"GET"} /> apiListGet
+
+## API Details
+
+- **Description** null
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Scope** global
+
+
+## Request
+
+### Signal format
+
+```json
+{
+  "api": {
+    "string": {
+      "service": {
+        "ServiceName": {
+          "consts": {
+            "string": "string"
+          },
+          "sets": {
+            "string": {
+              "fileName": "string",
+              "setMap": {
+                "string": [
+                  "string"
+                ]
+              }
+            }
+          },
+          "symbols": {
+            "string": "string"
+          },
+          "basic": {
+            "string": {
+              "value": "string",
+              "superCls?": "string",
+              "importRef?": "string"
+            }
+          },
+          "sysId": {
+            "string": {
+              "importRef?": "string",
+              "superClass": "string",
+              "value": "string"
+            }
+          },
+          "sysIdPrefix": {
+            "string": "string"
+          },
+          "enums": {
+            "string": {
+              "valueSet": [
+                "string"
+              ]
+            }
+          },
+          "dto": {
+            "string": {
+              "importMap?": {
+                "string": "string"
+              },
+              "superClass?": "string",
+              "dtoDir": "string",
+              "fieldMapTypeScript?": {
+                "string": "string"
+              },
+              "fieldMapJava?": {
+                "string": "string"
+              }
+            }
+          },
+          "msg": {
+            "string": {}
+          },
+          "sig": {
+            "string": {}
+          },
+          "serviceNames?": [
+            "ServiceName"
+          ],
+          "rpc": {
+            "importMap?": {
+              "string": "string"
+            },
+            "pathSeg": "string",
+            "call?": {
+              "string": {
+                "allowedDeployKinds": [
+                  "prod | beta | localHost | test"
+                ],
+                "allowedDeviceTypes": [
+                  "android | ios | web | agent | test"
+                ],
+                "allowedConnTypes": [
+                  "rpc | wsoc | media"
+                ],
+                "apiDesc?": "string",
+                "rateLimitPerSec": "number",
+                "apiMethod": "delete | get | patch | post | put",
+                "apiName": "string",
+                "apiVer": "v1",
+                "logMsg": "boolean",
+                "module": "string",
+                "msgSpec?": {
+                  "module": "string",
+                  "serviceName": "ServiceName",
+                  "paramMap?": {
+                    "string": "string"
+                  }
+                },
+                "rpcUri": "string",
+                "serviceName": "ServiceName",
+                "sigSpec": {
+                  "module": "string",
+                  "serverPush": "boolean",
+                  "serviceName": "ServiceName"
+                },
+                "sla": "number",
+                "timeout": "number",
+                "token": "bearer | refresh | refreshOptional | none",
+                "onlyArtifactAdmin": "boolean",
+                "requiredEntAdminScopes": [
+                  "about | auditTrail | translations | variables | actions | admins | automations | dashboard | dashboardActiveUsage | dashboardIssues | dashboardValidations | dashboardVersionTree | deeplinks | deploy | deployManage | deployPayment | deployPlugins | deployVariables | deployWidget | driveSheets | followers | formEditContentLayout | formEditDetails | formEditFormLayouts | formEditFormulas | formEditPermissions | formEditPrompts | formEditVisibility | formPreview | forms | groups | plugins | prompts | reports | roles | spreadsheets | terminal | users"
+                ],
+                "requiredPluginAdminScopes": [
+                  "admins"
+                ],
+                "requiredStoreAdminScopes": [
+                  "admins"
+                ],
+                "skipEntUserAuthorization": "boolean",
+                "skipInputValidation": "boolean",
+                "scope": "ent | global | globalOrEnt | plugin | pluginOrEnt | store | any",
+                "msgSchema?": "string",
+                "sigSchema?": "string",
+                "msgClassName?": "string",
+                "sigClassName?": "string",
+                "publishes": [
+                  "string"
+                ],
+                "dummyApi": "boolean"
+              }
+            }
+          },
+          "wsoc": {}
+        }
+      }
+    }
+  },
+  "pushSigs": {
+    "importMap": {
+      "string": "string"
+    },
+    "pushSigs": {
+      "string": "ServiceName"
+    }
+  }
+}
+```
+
