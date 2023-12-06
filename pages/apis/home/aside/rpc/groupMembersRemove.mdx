@@ -1,0 +1,41 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"PUT"} /> groupMembersRemove
+
+## API Details
+
+- **Description** remove members/remove admin for given group
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` `wsoc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Publishes** `groupMembership` `caller` `userCommonGroups` 
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "groupId": "GroupId",
+  "removeMemberSet?": [
+    "EntUserId"
+  ],
+  "removeAdminSet?": [
+    "EntUserId"
+  ],
+  "version?": "string"
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+
