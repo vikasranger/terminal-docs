@@ -1,0 +1,47 @@
+# starMessageListGet
+
+## API Details
+
+- **Description** Get list of star messages
+- **Version** `v1`
+- **Method** `get`
+- **Allowed Connection Types** `rpc` `wsoc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "filterEntIdSet?": [
+    "EntId"
+  ],
+  "version?": "string"
+}
+```
+
+### Signal format
+
+```json
+{
+  "starMessageList": [
+    {
+      "entId": "EntId",
+      "chatId": "ChatId",
+      "messageOffset": "number",
+      "creationDate": "string",
+      "senderId": "EntUserId",
+      "messageId": "MessageId"
+    }
+  ],
+  "version": "string"
+}
+```
+

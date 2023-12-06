@@ -1,0 +1,33 @@
+# callerDeviceRemove
+
+## API Details
+
+- **Description** Unlink device from linked device list
+- **Version** `v1`
+- **Method** `delete`
+- **Allowed Connection Types** `rpc` `wsoc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** refresh
+- **Flags** Log message
+- **Publishes** `callerDeviceList` 
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "deviceId": "DeviceId"
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+
