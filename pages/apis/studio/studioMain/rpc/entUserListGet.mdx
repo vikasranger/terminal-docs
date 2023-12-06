@@ -1,0 +1,89 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"GET"} /> entUserListGet
+
+## API Details
+
+- **Description** Get enterprise users for studio
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Scope** ent
+
+
+## Request
+
+### Signal format
+
+```json
+{
+  "entUserSet": [
+    {
+      "entUserId": "EntUserId",
+      "handle": "string",
+      "nickName": "string",
+      "roleIdSet?": [
+        "MetaIdRole"
+      ],
+      "managerId?": "EntUserId",
+      "isMember": "boolean",
+      "active": "boolean",
+      "canRemove": "boolean",
+      "isCurrentUser?": "boolean",
+      "userColor": "string",
+      "follower": "boolean",
+      "userSettingValueMap?": {
+        "MetaIdVar": {
+          "name?": "Symbol",
+          "valueStatus": "dataEntered | dataNotEntered",
+          "value?": "Object"
+        }
+      }
+    }
+  ],
+  "deployedRoleSet?": [
+    {
+      "metaId": "MetaIdRole",
+      "details": {
+        "description?": "string",
+        "name": "Symbol",
+        "label?": "string",
+        "filterTags?": {
+          "filterTagSet": [
+            "MetaIdFilterTag"
+          ],
+          "storeVersionId?": "StoreVersionId"
+        },
+        "storeVersionId?": "StoreVersionId"
+      },
+      "storeVersionId?": "StoreVersionId"
+    }
+  ],
+  "deployedUserSettingSet?": [
+    {
+      "userSettingName?": "Symbol",
+      "studioVar": {
+        "value?": {
+          "kind": "text | pickOne | pickMany",
+          "optionDataSourceVarId?": "MetaIdVar",
+          "excludeOnUserSettings?": "boolean",
+          "doNotShowValueToAdmin?": "boolean",
+          "storeVersionId?": "StoreVersionId"
+        },
+        "metaId": "MetaIdVar",
+        "details": {},
+        "deploy": "requiredOnDeploy | fixedOnDeploy",
+        "kind": "any | bool | buttonVariant | color | currency | dataPartitionPeriod | dataPriority | date | dateTime | day | decimal | deviceSize | deviceType | direction | dividerKind | document | duration | email | fieldVariant | font | html | hyperlink | icon | image | imageCorner | language | location | mapPinShape | mobileNumber | number | paragraph | ratingKind | stroke | symbol | text | themePlacement | time | timeZone | month | quarter | calendar | condition | function | mapping | scheduler | sequence | userSetting | mapOfText | chipSetDay | setOfNumber | setOfText | chipSetTime | tree",
+        "storeVersionId?": "StoreVersionId"
+      },
+      "deployedVarValue?": {}
+    }
+  ],
+  "version": "string"
+}
+```
+

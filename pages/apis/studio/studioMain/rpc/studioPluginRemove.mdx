@@ -1,0 +1,34 @@
+import MasterChip from "../../../../../components/MasterChip"
+
+# <MasterChip value={"DELETE"} /> studioPluginRemove
+
+## API Details
+
+- **Description** Remove studio plugin from plugin bundle
+- **Version** `v1`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Publishes** `studioPlugin` `studioPluginAvatar` 
+- **Scope** plugin
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "pluginId": "PluginId"
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+
