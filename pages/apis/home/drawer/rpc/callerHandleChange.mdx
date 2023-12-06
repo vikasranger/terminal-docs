@@ -1,0 +1,37 @@
+# callerHandleChange
+
+## API Details
+
+- **Description** Add handle to the caller by starting the verification workflow for the handle
+- **Version** `v1`
+- **Method** `patch`
+- **Allowed Connection Types** `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** refresh
+- **Flags** Log message
+- **Publishes** `caller` 
+- **Scope** global
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "userId?": "UserId",
+  "handle": "string"
+}
+```
+
+### Signal format
+
+```json
+{
+  "verifyKey": "AnyKey",
+  "expiryMins": "number"
+}
+```
+

@@ -1,0 +1,33 @@
+# subscribe
+
+## API Details
+
+- **Description** Subscribe to a topic
+- **Version** `v1`
+- **Method** `put`
+- **Allowed Connection Types** `wsoc` `rpc` 
+- **Allowed Deployment Kinds** `beta` `prod` `localHost` `test` 
+- **Allowed Device Types** `test` `ios` `android` `web` `agent` 
+- **SLA** 600
+- **Token** bearer
+- **Flags** Log message
+- **Scope** any
+
+
+## Request
+
+### Message format
+
+```json
+{
+  "aboutId": "SysId",
+  "type": "agentEnt | caller | callerAddrBook | callerBadgeMap | callerDeviceList | callerEnt | callerRecentList | callerStarMessageList | callerStudioAdmin | entAvatarAdmin | entAvatarUser | formComment | formResult | groupActionList | groupAvatar | groupInfo | groupTyping | mediaList | messageClearChat | messageLast | messageNew | messageProps | messageReceiptsChanged | messageRemoveForEveryone | messageRemoveForMe | pluginApiRequest | spreadsheet | spreadsheetRowAutomation | spreadsheetRowExpiry | storeItem | storeItemAvatar | studioAdminBook | studioAdminEditLock | studioEnt | studioEntAddrBook | studioEntDeploy | studioEntFollowerList | studioPlugin | studioPluginAvatar | userAvatar | userCommonGroupList | userLastOnline | userTyping"
+}
+```
+
+### Signal format
+
+```json
+{}
+```
+
